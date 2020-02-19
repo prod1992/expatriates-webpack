@@ -1,6 +1,8 @@
 import $ from "jquery";
 import "bootstrap-sass";
 import "select2";
+import "jquery-ui/ui/widgets/autocomplete";
+import "./autocomplete";
 
 $(function () {
 

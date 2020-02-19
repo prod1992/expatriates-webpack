@@ -1,0 +1,32 @@
+.ui-autocomplete {
+  z-index: 999;
+  position: absolute !important;
+  top: 100% !important;
+  min-width: 0;
+  max-width: 100%;
+  padding: 5px 0;
+  list-style-type: none;
+  font-size: 14px;
+  text-align: left;
+  background-color: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+  background-clip: padding-box;
+  margin-top: 8px;
+  max-height: 60vh;
+  overflow: auto;
+  .ui-menu-item {
+    padding: 10px 15px;
+    color: #000;
+    cursor: pointer;
+    .matched {
+      color: #3c2fd3;
+      text-transform: capitalize;
+    }
+    &.ui-state-focus {
+      background-color: #f0f0f0;
+    }
+  }
+}
