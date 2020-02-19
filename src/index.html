@@ -1,0 +1,849 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="ISO-8859-15">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Expatriates</title>
+</head>
+<body>
+
+<!-- MAIN HEADER -->
+<header class="main-header clearfix">
+    <!-- Overlay -->
+    <div class="dark-overlay">
+    </div>
+    <div class="container-fluid">
+        <a href="/" class="menu_toggler">
+            <span class="line top"></span>
+            <span class="line mid"></span>
+            <span class="line bot"></span>
+        </a>
+        <h2 class="logo">
+            <a href="/">
+                    <span class="logo_icon">
+
+                    </span>
+                <span class="logo_top">expatriates.com</span>
+                <span class="logo_bot">The online community for expatriates</span>
+            </a>
+        </h2>
+        <nav id="menu" class="main-nav desktop-nav">
+            <ul>
+                <li class="logo-in-nav">
+                    <h2 class="logo">
+                        <a href="/">
+                                <span class="logo_icon">
+
+                                </span>
+                            <span class="logo_top">expatriates.com</span>
+                            <span class="logo_bot">The online community for expatriates</span>
+                        </a>
+                    </h2>
+                </li>
+                <li>
+                    <a href="/"><i class="nav_icon exp-icon-home"></i>Home</a>
+                </li>
+                <li>
+                    <a href="/scripts/posting/subscribe.epl">
+                        <i class="nav_icon exp-icon-letter"></i> Subscribe
+                    </a>
+                </li>
+                <li>
+                    <a href="/html/contactus.html"><i class="nav_icon exp-icon-letter"></i>Contact Us</a>
+                </li>
+                <li>
+                    <a href="#"><i class="nav_icon icon-signin"></i>Sign In</a>
+                </li>
+                <!-- <li>
+                        <a href="#"><i class="nav_icon icon-myprofile"></i>My Profile</a>
+                </li>
+                <li>
+                        <a href="#"><i class="nav_icon icon-signout"></i>Sign Out</a>
+                </li> -->
+                <li class="btn_li">
+                    <a href="/cgi-local/placead/index.pl"
+                       class="btn btn-primary btn-block btn-with-icon icon-on-left"><i
+                            class="exp-icon-plus_rounded"></i>Place an Ad</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</header>
+<!-- MAIN HEADER ends -->
+<!-- MAIN CONTENT starts -->
+<div class="main_content home">
+    <!-- HOME HERO -->
+    <div class="page_hero home_hero bg-dark">
+        <div class="container-fluid">
+            <!-- SEARCH AREA -->
+            <div class="search_area">
+                <p class="sans home_hero__title hidden-xs">Search within the community for expatriates and
+                    internationally
+                    minded people eveywhere!</p>
+                <div class="form_wrap">
+                    <form class="home_search__form">
+                        <div class="row">
+                            <div class="col-sm-3 column">
+                                <div class="form-group">
+                                    <i class="exp-icon-search"></i>
+                                    <input type="text" class="form-control icon-on-left"
+                                           placeholder="I'm looking for..."/>
+                                </div>
+                            </div>
+                            <div class="col-sm-3 column">
+                                <div class="form-group">
+                                    <!-- CATEGORIES DROPDOWN -->
+                                    <div class="dropdown categories_dropdown">
+                                        <div class="dropdown-input" data-toggle="dropdown">
+                                            <button role="button" class="form-control text-left"
+                                                    title="Choose Category">All Categories
+                                            </button>
+                                            <span class="caret"></span>
+                                            <input id="category_id" type="hidden" value=""/>
+                                        </div>
+                                        <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu"
+                                            id="category_dropdown-menu">
+                                            <li data-value="0"><a href="#">All Categories</a></li>
+                                            <li data-value="8">
+                                                <a tabindex="-1" href="#">Items For Sale</a>
+                                            </li>
+                                            <li data-value="9">
+                                                <a tabindex="-1" href="#">Items Wanted</a>
+                                            </li>
+                                            <li data-value="1011">
+                                                <a tabindex="-1" href="#">Learning</a>
+                                            </li>
+                                            <li data-value="1015">
+                                                <a tabindex="-1" href="#">Childcare</a>
+                                            </li>
+                                            <li data-value="50">
+                                                <a tabindex="-1" href="#">Jobs Offered</a>
+                                            </li>
+                                            <li data-value="12">
+                                                <a tabindex="-1" href="#">Jobs Wanted</a>
+                                            </li>
+                                            <li data-value="1000">
+                                                <a tabindex="-1" href="#">Housing Available</a>
+                                            </li>
+                                            <li data-value="3018">
+                                                <a tabindex="-1" href="#">Commercial Property</a>
+                                            </li>
+                                            <li data-value="3026">
+                                                <a tabindex="-1" href="#">Plots</a>
+                                            </li>
+                                            <li data-value="1006">
+                                                <a tabindex="-1" href="#">Housing Wanted</a>
+                                            </li>
+                                            <li data-value="51">
+                                                <a tabindex="-1" href="#">Community</a>
+                                            </li>
+                                            <li data-value="3017">
+                                                <a tabindex="-1" href="#">Project Work Offered</a>
+                                            </li>
+                                            <li data-value="1009">
+                                                <a tabindex="-1" href="#">Business</a>
+                                            </li>
+                                            <li data-value="49">
+                                                <a tabindex="-1" href="#">Services</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <!-- CATEGORIES DROPDOWN end-->
+                                </div>
+                            </div>
+                            <div class="col-sm-3 column">
+                                <div class="form-group has-clear">
+                                    <div class="ui-front">
+                                        <i class="exp-icon-location"></i>
+                                        <input
+                                                id="locationAutocomplete"
+                                                type="text"
+                                                class="form-control icon-on-left autocomplete"
+                                                placeholder="Location"
+                                                data-source='[{"label": "A&#39;ali","value": "1328"},{"label":"Abha","value": "1242"},{"label": "Abqaiq", "value":"1186"},{"label": "Abu Dhabi", "value": "1051"},{ "label": "Adana", "value": "1263"},{ "label": "Addis Ababa", "value": "1229"},{ "label": "Adliya", "value": "1335"},{ "label": "Afghanistan", "value": "107"},{ "label": "Ahmedabad", "value": "1243"},{ "label": "Ajman", "value": "1196"},{ "label": "Al Ain", "value": "1220"},{ "label": "Albania", "value": "138"},{ "label": "Algarve", "value": "1102"},{ "label": "Algeria", "value": "96"},{ "label": "Algiers", "value": "1154"},{ "label": "Alicante", "value": "1084"},{ "label": "Amman", "value": "1153"},{ "label": "Amsterdam", "value": "1260"},{ "label": "Amwaj", "value": "1327"},{ "label": "Anguilla", "value": "1137"},{ "label": "Ankara", "value": "1209"},{ "label": "Antalya", "value": "1271"},{ "label": "Antwerp", "value": "1032"},{ "label": "Aqaba", "value": "1259"},{ "label": "Arad", "value": "1339"},{ "label": "Arar", "value": "1311"},{ "label": "Argentina", "value": "54"},{ "label": "Armenia", "value": "142"},{ "label": "Astana", "value": "1219"},{ "label": "Athens", "value": "1047"},{ "label": "Auckland", "value": "1092"},{ "label": "Austin", "value": "1059"},{ "label": "Australia", "value": "47"},{ "label": "Austria", "value": "15"},{ "label": "Azerbaijan", "value": "119"},{ "label": "Baghdad", "value": "1281"},{ "label": "Baha", "value": "1312"},{ "label": "Bahamas", "value": "1256"},{ "label": "Bahrain", "value": "166"},{ "label": "Baku", "value": "1225"},{ "label": "Balearic Islands (Mallorca, Menorca, Ibiza)", "value": "1091"},{ "label": "Bali", "value": "1106"},{ "label": "Bangalore", "value": "1056"},{ "label": "Bangkok", "value": "1122"},{ "label": "Bangladesh", "value": "112"},{ "label": "Barbados", "value": "1205"},{ "label": "Barcelona", "value": "1004"},{ "label": "Basel", "value": "1030"},{ "label": "Batha", "value": "1353"},{ "label": "Bawshar", "value": "1306"},{ "label": "Beijing", "value": "1016"},{ "label": "Beirut", "value": "1149"},{ "label": "Belgium", "value": "10"},{ "label": "Belgrade", "value": "1141"},{ "label": "Belize", "value": "126"},{ "label": "Belize City", "value": "1230"},{ "label": "Berlin", "value": "1019"},{ "label": "Bern", "value": "1280"},{ "label": "Bhopal", "value": "1286"},{ "label": "Biarritz", "value": "1113"},{ "label": "Birmingham", "value": "1179"},{ "label": "Bogota", "value": "1147"},{ "label": "Bohol", "value": "1371"},{ "label": "Bolivia", "value": "115"},{ "label": "Bologna", "value": "1044"},{ "label": "Bordeaux", "value": "1110"},{ "label": "Boston", "value": "1060"},{ "label": "Bratislava", "value": "1097"},{ "label": "Brazil", "value": "39"},{ "label": "Brisbane", "value": "1022"},{ "label": "Brunei", "value": "1081"},{ "label": "Brussels", "value": "1031"},{ "label": "Bucharest", "value": "1143"},{ "label": "Budaiya", "value": "1337"},{ "label": "Budapest", "value": "1035"},{ "label": "Buenos Aires", "value": "1039"},{ "label": "Bulgaria", "value": "25"},{ "label": "Buraidah", "value": "1284"},{ "label": "Bursa", "value": "1262"},{ "label": "Busaiteen", "value": "1333"},{ "label": "Butuan City", "value": "1202"},{ "label": "Cairo", "value": "1075"},{ "label": "Calgary", "value": "1100"},{ "label": "Cambodia", "value": "116"},{ "label": "Canada", "value": "33"},{ "label": "Canary Islands", "value": "1094"},{ "label": "Cannes", "value": "1109"},{ "label": "Cape Town", "value": "1127"},{ "label": "Cape Verde", "value": "141"},{ "label": "Caracas", "value": "1253"},{ "label": "Cardiff", "value": "1181"},{ "label": "Caribbean", "value": "83"},{ "label": "Casablanca", "value": "1138"},{ "label": "Cayman Islands", "value": "1208"},{ "label": "Cebu City", "value": "1136"},{ "label": "Chandigarh Tricity", "value": "1273"},{ "label": "Chennai", "value": "1068"},{ "label": "Chicago", "value": "1061"},{ "label": "Chile", "value": "79"},{ "label": "China", "value": "43"},{ "label": "Cochin", "value": "1073"},{ "label": "Coimbatore", "value": "1162"},{ "label": "Cologne", "value": "1087"},{ "label": "Colombia", "value": "91"},{ "label": "Colombo", "value": "1142"},{ "label": "Copenhagen", "value": "1027"},{ "label": "Corfu", "value": "1178"},{ "label": "Costa Rica", "value": "124"},{ "label": "Cotabatol City", "value": "1239"},{ "label": "Crete", "value": "1174"},{ "label": "Croatia", "value": "105"},{ "label": "Cyprus", "value": "89"},{ "label": "Czech Rep.", "value": "45"},{ "label": "Dali", "value": "1241"},{ "label": "Damascus", "value": "1150"},{ "label": "Dammam", "value": "1126"},{ "label": "Dar es Salaam", "value": "1191"},{ "label": "Davao City", "value": "1237"},{ "label": "Denmark", "value": "48"},{ "label": "Dhahran", "value": "1185"},{ "label": "Dhaka", "value": "1213"},{ "label": "Diplomatic Quarter", "value": "1357"},{ "label": "Doha", "value": "1096"},{ "label": "Dominican Republic", "value": "1206"},{ "label": "Dortmund", "value": "1168"},{ "label": "Dubai", "value": "1026"},{ "label": "Dubai-Sharjah-Ajman (DSA)", "value": "401"},{ "label": "Dublin", "value": "1038"},{ "label": "Dusseldorf", "value": "1107"},{ "label": "Duwadimi", "value": "1347"},{ "label": "Eastern Province", "value": "400"},{ "label": "Ecuador", "value": "130"},{ "label": "Edinburgh", "value": "1129"},{ "label": "Edmonton", "value": "1290"},{ "label": "Egypt", "value": "66"},{ "label": "El Salvador", "value": "137"},{ "label": "Erbil", "value": "1197"},{ "label": "Estonia", "value": "133"},{ "label": "Ethiopia", "value": "121"},{ "label": "Faisalabad", "value": "1309"},{ "label": "Fiji", "value": "1199"},{ "label": "Finland", "value": "46"},{ "label": "Florence, Tuscany", "value": "1008"},{ "label": "France", "value": "7"},{ "label": "Frankfurt", "value": "1090"},{ "label": "Fujairah", "value": "1318"},{ "label": "Fuzhou", "value": "1201"},{ "label": "Galway", "value": "1157"},{ "label": "Gaziantep", "value": "1310"},{ "label": "Gelsenkirchen", "value": "1169"},{ "label": "General Santos City", "value": "1236"},{ "label": "Geneva", "value": "1028"},{ "label": "Georgia", "value": "144"},{ "label": "Germany", "value": "13"},{ "label": "Gibraltar (UK)", "value": "1192"},{ "label": "Goa", "value": "1125"},{ "label": "Greece", "value": "42"},{ "label": "Guangzhou", "value": "1164"},{ "label": "Guatemala", "value": "128"},{ "label": "Guatemala City", "value": "1234"},{ "label": "Gudaibiya", "value": "1343"},{ "label": "Gulbarga", "value": "1372"},{ "label": "Hafar Al-Batin", "value": "1303"},{ "label": "Hail", "value": "1255"},{ "label": "Hair", "value": "1360"},{ "label": "Hamad Town", "value": "1324"},{ "label": "Hamburg", "value": "1108"},{ "label": "Hamilton-Burlington", "value": "1293"},{ "label": "Hanover", "value": "1167"},{ "label": "Hara", "value": "1376"},{ "label": "Haryana", "value": "1352"},{ "label": "Hasa", "value": "1183"},{ "label": "Heidelberg", "value": "1123"},{ "label": "Helsinki", "value": "1034"},{ "label": "Hidd", "value": "1325"},{ "label": "Ho Chi Minh City", "value": "1139"},{ "label": "Honduras", "value": "127"},{ "label": "Hong Kong", "value": "1018"},{ "label": "Hoora", "value": "1334"},{ "label": "Houston", "value": "1173"},{ "label": "Hungary", "value": "51"},{ "label": "Hyderabad", "value": "1069"},{ "label": "Iceland", "value": "86"},{ "label": "India", "value": "50"},{ "label": "Indonesia", "value": "67"},{ "label": "Iran", "value": "98"},{ "label": "Iraq", "value": "109"},{ "label": "Ireland", "value": "52"},{ "label": "Isa Town", "value": "1330"},{ "label": "Islamabad", "value": "1052"},{ "label": "Israel", "value": "92"},{ "label": "Istanbul", "value": "1077"},{ "label": "Italy", "value": "22"},{ "label": "Izmir", "value": "1258"},{ "label": "Jakarta", "value": "1076"},{ "label": "Jamaica", "value": "1200"},{ "label": "Janabiya", "value": "1342"},{ "label": "Japan", "value": "35"},{ "label": "Jeddah", "value": "1055"},{ "label": "Jerusalem", "value": "1151"},{ "label": "Jidhafs", "value": "1340"},{ "label": "Jizan", "value": "1283"},{ "label": "Johannesburg", "value": "1132"},{ "label": "Jordan", "value": "95"},{ "label": "Jubail", "value": "1184"},{ "label": "Juffair", "value": "1326"},{ "label": "Kabul", "value": "1194"},{ "label": "Kaiserslautern", "value": "1170"},{ "label": "Kampala", "value": "1298"},{ "label": "Karachi", "value": "1079"},{ "label": "Kathmandu", "value": "1163"},{ "label": "Kazakhstan", "value": "117"},{ "label": "Kenya", "value": "55"},{ "label": "Kerala", "value": "1072"},{ "label": "Khafji", "value": "1187"},{ "label": "Kharj", "value": "1274"},{ "label": "Khartoum", "value": "1161"},{ "label": "Khobar", "value": "1182"},{"label": "Kiev", "value": "1226"},{ "label": "King Abdullah Financial District", "value": "1369"}]'
+                                                data-value="region_id"
+                                                data-defaultvalue="1328"/>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-3 column btn_column">
+                                <div class="form-group">
+                                    <button class="btn btn-primary">Search</button>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <!-- SEARCH AREA ends -->
+        </div>
+    </div>
+    <!-- HOME HERO ends -->
+    <!-- HERO BOT -->
+    <div class="home_hero__bottom">
+        <div class="container-fluid">
+            <div class="row flex-row">
+                <div class="col hidden-xs">
+                    <p class="sans">We invite you to place a free classified ad and browse community classifieds ads in
+                        your city
+                        or country</p>
+                </div>
+                <div class="col btn_col">
+                    <a class="btn btn-block btn-primary-gradient" href="#">Place a Free Ad</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- HERO BOT ends-->
+    <!-- ADS SLIDER -->
+    <!--    <div class="page_section bg-darker ads_slider__section">-->
+    <!--        <div class="container-fluid">-->
+    <!--            <div class="row">-->
+    <!--                <div class="col-md-12">-->
+    <!--                    <h3 class="home_section__title">Premium / Recent Ads</h3>-->
+    <!--                </div>-->
+    <!--            </div>-->
+    <!--        </div>-->
+    <!--        <div class="container-fluid container-slider">-->
+    <!--            <div class="row">-->
+    <!--                <div class="col-md-12 slider_paddings">-->
+    <!--                    <div class="owl-carousel ads_slider__self owl-json"-->
+    <!--                         data-path="/eapi/v1/listing/adshighlight">-->
+    <!--                        &lt;!&ndash; gonna be loaded from API (.owl-json class is a must)  &ndash;&gt;-->
+    <!--                        <figure class="ad_box owl-json-template">-->
+    <!--                            <a role="button" class="star_ad "><i class="exp-icon-noun_61590"></i></a>-->
+    <!--                            <a title="" href="">-->
+    <!--                                <div class="image_holder">-->
+    <!--                                    <div class="image_self"></div>-->
+    <!--                                </div>-->
+    <!--                                <div class="ad_descr"><p>Dummy Text Which is going to be removed when data is loaded from api</p></div>-->
+    <!--                            </a>-->
+    <!--                        </figure>-->
+    <!--                    </div>-->
+    <!--                </div>-->
+    <!--            </div>-->
+    <!--        </div>-->
+    <!--    </div>-->
+    <!-- ADS SLIDER ends -->
+    <!-- POPULAR LOCATIONS -->
+    <div class="page_section popular_locations">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12">
+                    <h3 class="home_section__title">Popular Locations</h3>
+                </div>
+            </div>
+            <div class="row">
+                <!-- TOP CITIES -->
+                <div class="col-sm-4 col-md-2">
+                    <div class="locations_group">
+                        <div class="locations_subgroup">
+                            <ul>
+                                <li>
+                                    <a class="locations_group__title" href="/classifieds/bhr">Bahrain</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4 col-md-2">
+                    <div class="locations_group">
+                        <div class="locations_subgroup">
+                            <ul>
+                                <li>
+                                    <a class="locations_group__title" href="/classifieds/ath">Athens</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4 col-md-2">
+                    <div class="locations_group">
+                        <div class="locations_subgroup">
+                            <ul>
+                                <li><a class="locations_group__title" href="/classifieds/cai">Cairo</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4 col-md-2">
+                    <div class="locations_group">
+                        <div class="locations_subgroup">
+                            <ul>
+                                <li><a class="locations_group__title" href="/classifieds/gen">Geneva</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4 col-md-2">
+                    <div class="locations_group">
+                        <div class="locations_subgroup">
+                            <ul>
+                                <li><a class="locations_group__title" href="/classifieds/jub">Jubail</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4 col-md-2">
+                    <div class="locations_group">
+                        <div class="locations_subgroup">
+                            <ul>
+                                <li><a class="locations_group__title" href="/classifieds/dubai-sharjah-ajman">Dubai</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- TOP CITIES end -->
+            <div class="row">
+                <div class="col-md-12">
+                    <hr class="">
+                </div>
+            </div>
+            <div class="row">
+                <!-- POPULAR LOCATIONS -->
+                <div class="col-sm-4 col-md-2">
+                    <div class="locations_group">
+                        <div class="locations_subgroup">
+                        </div>
+                        <div class="locations_subgroup">
+                            <ul>
+                                <li><a href="/classifieds/hdr">Hyderabad</a></li>
+                                <li><a href="/classifieds/amm">Ammam</a></li>
+                                <li><a href="/classifieds/amst">Amsterdam</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4 col-md-2">
+                    <div class="locations_group">
+                        <div class="locations_subgroup">
+                        </div>
+                        <div class="locations_subgroup">
+                            <ul>
+                                <li><a href="/classifieds/riy">Riyadh</a></li>
+                                <li><a href="/classifieds/beij">Beijing</a></li>
+                                <li><a href="/classifieds/bru">Brussels</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4 col-md-2">
+                    <div class="locations_group">
+                        <div class="locations_subgroup">
+                            <ul>
+                                <li><a href="/classifieds/doha">Doha</a></li>
+                                <li><a href="/classifieds/jed">Jeddah</a></li>
+                                <li><a href="/classifieds/dub">Dubai</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4 col-md-2">
+                    <div class="locations_group">
+                        <div class="locations_subgroup">
+                            <ul>
+                                <li><a href="/classifieds/ho">Ho Chi Minh City</a></li>
+                                <li><a href="/classifieds/jak">Jakarta</a></li>
+                                <li><a href="/classifieds/greater-dammam">Dammam</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4 col-md-2">
+                    <div class="locations_group">
+                        <div class="locations_subgroup">
+                            <ul>
+                                <li><a href="/classifieds/kar">Karachi</a></li>
+                                <li><a href="/classifieds/kua">Kuala Lumpur</a></li>
+                                <li><a href="/classifieds/kwt">Kuwait</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4 col-md-2">
+                    <div class="locations_group">
+                        <div class="locations_subgroup">
+                            <ul>
+                                <li><a href="/classifieds/mnl">Manila</a></li>
+                                <li><a href="/classifieds/msc">Muscat</a></li>
+                                <li><a href="/classifieds/singapore">Singapore</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- POPULAR LOCATIONS end -->
+            </div>
+        </div>
+    </div>
+    <!-- POPULAR LOCATIONS ends -->
+    <!-- BROWSE CONTINENTS -->
+    <div class="page_section bg-darker browse_continents">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12">
+                    <h3 class="home_section__title">Browse Continents</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="one_cont_collapse">
+                        <a href="#cont_collapse1" role="button" data-toggle="collapse" aria-expanded="false"
+                           aria-controls="cont_collapse1">Afrika
+                            <i class="exp-icon-arrow_down"></i> </a>
+                        <div class="collapse" id="cont_collapse1">
+                            <ul>
+                                <li><a href="#">One Continent</a></li>
+                                <li><a href="#">One Continent</a></li>
+                                <li><a href="#">One Continent</a></li>
+                                <li><a href="#">One Continent</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="one_cont_collapse">
+                        <a href="#cont_collapse2" role="button" data-toggle="collapse" aria-expanded="false"
+                           aria-controls="cont_collapse2">Asia<i class="exp-icon-arrow_down"></i>
+                        </a>
+                        <div class="collapse" id="cont_collapse2">
+                            <ul>
+                                <li><a href="#">One Continent</a></li>
+                                <li><a href="#">One Continent</a></li>
+                                <li><a href="#">One Continent</a></li>
+                                <li><a href="#">One Continent</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="one_cont_collapse">
+                        <a href="#cont_collapse3" role="button" data-toggle="collapse" aria-expanded="false"
+                           aria-controls="cont_collapse3">Australia & Oceaniai<i class="exp-icon-arrow_down"></i> </a>
+                        <div class="collapse" id="cont_collapse3">
+                            <ul>
+                                <li><a href="#">One Continent</a></li>
+                                <li><a href="#">One Continent</a></li>
+                                <li><a href="#">One Continent</a></li>
+                                <li><a href="#">One Continent</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="one_cont_collapse">
+                        <a href="#cont_collapse4" role="button" data-toggle="collapse" aria-expanded="false"
+                           aria-controls="cont_collapse4">Europe
+                            <i class="exp-icon-arrow_down"></i> </a>
+                        <div class="collapse" id="cont_collapse4">
+                            <ul>
+                                <li><a href="#">One Continent</a></li>
+                                <li><a href="#">One Continent</a></li>
+                                <li><a href="#">One Continent</a></li>
+                                <li><a href="#">One Continent</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="one_cont_collapse">
+                        <a href="#cont_collapse5" role="button" data-toggle="collapse" aria-expanded="false"
+                           aria-controls="cont_collapse5">Latin America & Caribbeani
+                            <i class="exp-icon-arrow_down"></i></a>
+                        <div class="collapse" id="cont_collapse5">
+                            <ul>
+                                <li><a href="#">One Continent</a></li>
+                                <li><a href="#">One Continent</a></li>
+                                <li><a href="#">One Continent</a></li>
+                                <li><a href="#">One Continent</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="one_cont_collapse">
+                        <a href="#cont_collapse6" role="button" data-toggle="collapse" aria-expanded="false"
+                           aria-controls="cont_collapse6">North Americai
+                            <i class="exp-icon-arrow_down"></i> </a>
+                        <div class="collapse" id="cont_collapse6">
+                            <ul>
+                                <li><a href="#">One Continent</a></li>
+                                <li><a href="#">One Continent</a></li>
+                                <li><a href="#">One Continent</a></li>
+                                <li><a href="#">One Continent</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- BROWSE CONTINENTS ends -->
+    <!-- BROWSE CATEGORIES -->
+    <div class="page_section browse_categories">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12">
+                    <h3 class="home_section__title">Browse Categories</h3>
+                </div>
+            </div>
+            <div class="row gutter-10">
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="category_box">
+                        <h4 class="category_box_title">
+                            <a href="/classifieds/forsale/">Items for sale (14524)</a>
+                            <span data-toggle="collapse" role="button" data-target="#cat_collapse0"
+                                  aria-controls="cat_collapse0"></span>
+                        </h4>
+                        <div class="collapse" id="cat_collapse0">
+                            <ul>
+                                <li><a href="#">Appliances</a></li>
+                                <li><a href="#">Auto Parts</a></li>
+                                <li><a href="#">Baby & Kid Stuff</a></li>
+                                <li><a href="#">Bicycles</a></li>
+                                <li><a href="#">Boats</a></li>
+                                <li><a href="#">Books</a></li>
+                                <li><a href="#">Clothing & Accessories</a></li>
+                                <li><a href="#">Collectibles</a></li>
+                                <li><a href="#">Computers</a></li>
+                                <li><a href="#">Electronics</a></li>
+                                <li><a href="#">Free Items</a></li>
+                                <li><a href="#">Furniture</a></li>
+                                <li><a href="#">Health & Beauty</a></li>
+                                <li><a href="#">Household Items</a></li>
+                                <li><a href="#">Jewelry</a></li>
+                                <li><a href="#">Materials</a></li>
+                                <li><a href="#">Mobile Phones</a></li>
+                                <li><a href="#">Motorcycles</a></li>
+                                <li><a href="#">Musical Instruments</a></li>
+                                <li><a href="#">Photo & Video</a></li>
+                                <li><a href="#">Purses & Wallets</a></li>
+                                <li><a href="#">Sports</a></li>
+                                <li><a href="#">Tablets</a></li>
+                                <li><a href="#">Motorcycles</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="category_box">
+                        <h4 class="category_box_title">
+                            <a href="/classifieds/tobuy">Items wanted (2476)</a>
+                            <span data-toggle="collapse" role="button" data-target="#cat_collapse1"
+                                  aria-controls="cat_collapse1"></span>
+                        </h4>
+                        <div class="collapse" id="cat_collapse1"></div>
+                    </div>
+                    <div class="category_box">
+                        <h4 class="category_box_title">
+                            <a href="/classifieds/learning">Learning</a>
+                            <span data-toggle="collapse" role="button" data-target="#cat_collapse2"
+                                  aria-controls="cat_collapse2"></span>
+                        </h4>
+                        <div class="collapse" id="cat_collapse2">
+                            <ul>
+                                <li><a href="#">Artists</a></li>
+                                <li><a href="#">General</a></li>
+                                <li><a href="#">Local News</a></li>
+                                <li><a href="#">Lost & Found</a></li>
+                                <li><a href="#">Musicians</a></li>
+                                <li><a href="#">Pets</a></li>
+                                <li><a href="#">Rideshare</a></li>
+                                <li><a href="#">Sports</a></li>
+                                <li><a href="#">Events</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="category_box">
+                        <h4 class="category_box_title">
+                            <a href="/classifieds/childcare">Childcare</a>
+                            <span data-toggle="collapse" role="button" data-target="#cat_collapse3"
+                                  aria-controls="cat_collapse3"></span>
+                        </h4>
+                        <div class="collapse" id="cat_collapse3"></div>
+                    </div>
+                    <div class="category_box">
+                        <h4 class="category_box_title">
+                            <a href="/classifieds/jobs">Jobs Offered</a>
+                            <span data-target="#cat_collapse4" role="button" data-toggle="collapse"
+                                  aria-controls="cat_collapse4"></span>
+                        </h4>
+                        <div class="collapse" id="cat_collapse4"></div>
+                    </div>
+                    <div class="category_box">
+                        <h4 class="category_box_title">
+                            <a href="/classifieds/cvs">Jobs Wanted</a>
+                            <span data-target="#cat_collapse5" role="button" data-toggle="collapse"
+                                  aria-controls="cat_collapse5"></span>
+                        </h4>
+                        <div class="collapse" id="cat_collapse5">
+                            <ul>
+                                <li><a href="#">Nursery Schools</a></li>
+                                <li><a href="#">Positions Offered</a></li>
+                                <li><a href="#">Positions Wanted</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="category_box">
+                        <h4 class="category_box_title">
+                            <a href="/classifieds/hs">Housing Available</a>
+                            <span data-target="#cat_collapse7" role="button" data-toggle="collapse"
+                                  aria-controls="cat_collapse7"></span>
+                        </h4>
+                        <div class="collapse" id="cat_collapse7">
+                            <ul>
+                                <li><a href="#">Apartments/Flats/Houses</a></li>
+                                <li><a href="#">Holiday/Vacation Rentals</a></li>
+                                <li><a href="#">Housing Exchanges</a></li>
+                                <li><a href="#">Real Estate For Sale</a></li>
+                                <li><a href="#">Bedspace Available</a></li>
+                                <li><a href="#">Commercial/Office</a></li>
+                                <li><a href="#">Rooms Available</a></li>
+                                <li><a href="#">Sublets</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="category_box">
+                        <h4 class="category_box_title">
+                            <a href="/classifieds/plots">Plots</a>
+                            <span data-target="#cat_collapse8" role="button" data-toggle="collapse"
+                                  aria-controls="cat_collapse8"></span>
+                        </h4>
+                        <div class="collapse" id="cat_collapse8">
+                            <ul>
+                                <li>
+                                    <a href="#">Language Exchange</a>
+                                </li>
+                                <li>
+                                    <a href="#">Lessons Offered</a>
+                                </li>
+                                <li>
+                                    <a href="#">Lessons Wanted</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="category_box">
+                        <h4 class="category_box_title">
+                            <a href="/classifieds/hw">Housing Wanted</a>
+                            <span data-target="#cat_collapse9" role="button" data-toggle="collapse"
+                                  aria-controls="cat_collapse9"></span>
+                        </h4>
+                        <div class="collapse" id="cat_collapse9">
+                            <ul>
+                                <li>
+                                    <a href="#">Business Partners</a>
+                                </li>
+                                <li>
+                                    <a href="#">Businesses For Sale</a>
+                                </li>
+                                <li>
+                                    <a href="#">Wholesale Products</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="category_box">
+                        <h4 class="category_box_title">
+                            <a href="/classifieds/srv">Services</a>
+                            <span data-target="#cat_collapse10" role="button" data-toggle="collapse"
+                                  aria-controls="cat_collapse10"></span>
+                        </h4>
+                        <div class="collapse" id="cat_collapse10">
+                            <ul>
+                                <li>
+                                    <a href="#">Automotive</a>
+                                </li>
+                                <li>
+                                    <a href="#">Beautician</a>
+                                </li>
+                                <li>
+                                    <a href="#">Business</a>
+                                </li>
+                                <li>
+                                    <a href="#">Computer</a>
+                                </li>
+                                <li>
+                                    <a href="#">Construction</a>
+                                </li>
+                                <li>
+                                    <a href="#">Counseling</a>
+                                </li>
+                                <li>
+                                    <a href="#">Creative</a>
+                                </li>
+                                <li>
+                                    <a href="#">Education</a>
+                                </li>
+                                <li>
+                                    <a href="#">Elder Care</a>
+                                </li>
+                                <li>
+                                    <a href="#">Event Planning</a>
+                                </li>
+                                <li>
+                                    <a href="#">Farm/Garden</a>
+                                </li>
+                                <li>
+                                    <a href="#">Financial</a>
+                                </li>
+                                <li>
+                                    <a href="#">Food & Drink</a>
+                                </li>
+                                <li>
+                                    <a href="#">Guides/Interpreters</a>
+                                </li>
+                                <li>
+                                    <a href="#">Household</a>
+                                </li>
+                                <li>
+                                    <a href="#">Immigration</a>
+                                </li>
+                                <li>
+                                    <a href="#">Labor/Moving</a>
+                                </li>
+                                <li>
+                                    <a href="#">Legal</a>
+                                </li>
+                                <li><a href="#">Pet Sitting</a></li>
+                                <li><a href="#">Pick Up & Drop Off</a></li>
+                                <li><a href="#">Real Estate</a></li>
+                                <li><a href="#">Relocation</a></li>
+                                <li><a href="#">Security</a></li>
+                                <li><a href="#">Tax Preparation</a></li>
+                                <li><a href="#">Technical</a></li>
+                                <li><a href="#">Training</a></li>
+                                <li><a href="#">Translation</a></li>
+                                <li><a href="#">Transportation</a></li>
+                                <li><a href="#">Travel</a></li>
+                                <li><a href="#">Web Design</a></li>
+                                <li><a href="#">Writing</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- BROWSE CATEGORIES ends -->
+    <!-- APP DOWNLOAD -->
+    <div class="page_section bg-darker app_download">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12">
+                    <img class="app_download__logo" src="./images/app-logo_03.png" alt="expatriates.com"/>
+                    <p class="sans app_download__content">Android mobile app is now available for testing. To try it,
+                        please sign
+                        up
+                        <a href="#">here</a></p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- APP DOWNLOAD ends -->
+</div>
+<!-- MAIN CONTENT ends -->
+<!-- FOOTER -->
+<footer>
+    <div class="container-fluid">
+        <!-- FOOTER TOP -->
+        <div class="footer_top">
+            <div class="row">
+                <div class="col-md-9 footer_top__left">
+                    <div class="row">
+                        <div class="col-xs-6 col-sm-4 col-md-3">
+                            <div class="footer_col">
+                                <h4 class="footer_col__title">Platform</h4>
+                                <ul>
+                                    <li><a href="#">Advertising</a></li>
+                                    <li><a href="#">Terms of Use</a></li>
+                                    <li><a href="#">Privacy</a></li>
+                                    <li><a href="#">System Status</a></li>
+                                    <li><a href="#">Unsubscribe</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-xs-6 col-sm-4 col-md-3 text-xs-right">
+                            <div class="footer_col">
+                                <h4 class="footer_col__title">Support</h4>
+                                <ul>
+                                    <li><a href="#">Contact support</a></li>
+                                    <li><a href="#">Give feedback</a></li>
+                                    <li><a href="#">Knowledge Base</a></li>
+                                    <li><a href="#">All articles</a></li>
+                                    <li><a href="#">FAQ</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-md-3 col-sm-4">
+                            <div class="footer_col">
+                                <h4 class="footer_col__title">Contact Us</h4>
+                                <ul>
+                                    <li><a href="#">Post a new idea</a></li>
+                                    <li><a href="#">All ideas</a></li>
+                                    <li><a href="#">My feedback</a></li>
+                                    <li><a href="#">General Feedback</a></li>
+                                    <li><a href="#">Report Defect</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 footer_top__right">
+                    <div class="row hidden-xs hidden-sm">
+                        <div class="col-xs-12">
+                            <a class="btn btn-primary btn-block" href="#">Place a Free Ad</a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <div class="follow_place">
+                                <div class="row gutter-10 flex-row">
+                                    <div class="col-xs-4 text-left">
+                                        <p>Follow us</p>
+                                    </div>
+                                    <div class="col-xs-8 text-right">
+                                        <ul class="social_ul">
+                                            <li>
+                                                <a href="#"> <i class="exp-icon-facebook-logo"></i> </a>
+                                            </li>
+                                            <li>
+                                                <a href="#"> <i class="exp-icon-instagram-logo"></i> </a>
+                                            </li>
+                                            <li>
+                                                <a href="#"> <i class="exp-icon-twitter-logo"></i> </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- FOOTER TOP ends-->
+        <!-- FOOTER BOTTOM -->
+        <div class="footer_bottom">
+            <div class="row">
+                <div class="col-md-12">
+                    <p class="footer_copy">Copyright 2017 Expatriates.com | All rights reserved</p>
+                </div>
+            </div>
+        </div>
+        <!-- FOOTER BOTTOM ends -->
+    </div>
+</footer>
+<!-- FOOTER ends -->
+
+</body>
+</html>

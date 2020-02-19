@@ -1,0 +1,40 @@
+.app_download {
+  padding: 30px 0;
+  .bg-darker & {
+    background-color: #fff;
+  }
+  .app_download__logo {
+    max-width: 120px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-bottom: 10px;
+    @media(min-width: 768px) {
+      margin-bottom: 0;
+      max-width: 140px;
+    }
+  }
+  .app_download__content {
+    vertical-align: middle;
+    font-size: 14px;
+    margin: 0;
+    @media(min-width: $screen-sm) {
+      padding: 0;
+      padding-left: 30px;
+      display: inline-block;
+      max-width: calc(100% - 48px);
+      font-size: 15px;
+    }
+    @media(min-width: 800px) {
+      font-size: 17px;
+    }
+    a {
+      text-decoration: underline;
+    }
+  }
+}
+
+@media(max-width: $screen-sm-max) {
+  .app_download {
+    text-align: center;
+  }
+}

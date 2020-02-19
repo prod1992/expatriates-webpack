@@ -1,0 +1,91 @@
+.main-header {
+  padding: 20px 0;
+  background-color: #05699b;
+  /* Remove everything under this to make it flat */
+  /* background-image: -moz-linear-gradient(top,#ffce9c 0,#fed8b0 50%,#ffce9c 100%);
+  background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0%,#ffce9c),color-stop(50%,#fed8b0),color-stop(100%,#ffce9c));
+  background-image: -webkit-linear-gradient(top,#ffce9c 0,#fed8b0 50%,#ffce9c 100%);
+  background-image: -o-linear-gradient(top,#ffce9c 0,#fed8b0 50%,#ffce9c 100%);
+  background-image: linear-gradient(top,#ffce9c 0,#fed8b0 50%,#ffce9c 100%);*/
+  .logo {
+    float: left;
+    margin: 0;
+    transition: all 0.3s ease-out;
+    a {
+      color: #fff;
+      position: relative;
+      display: block;
+      padding-left: 40px;
+      text-decoration: none;
+    }
+    span {
+      display: block;
+      color: #ffffff;
+      font-size: 13px;
+      font-weight: 400;
+    }
+    .logo_icon {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 30px;
+      height: 30px;
+      background-image: url("../images/logo-icon_svg.svg");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: 100%;
+    }
+    .logo_top {
+      font-size: 25px;
+      font-weight: 500;
+      line-height: 1.2;
+    }
+  }
+  .main-nav {
+    font-size: 16px;
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+    }
+    a {
+      text-decoration: none;
+      color: #fff;
+      position: relative;
+      &:not(.btn):hover {
+        color: #ffd1a2;
+      }
+      .nav_icon {
+        @media(min-width: 768px) {
+          display: none;
+        }
+      }
+      &.btn {
+
+        @media(min-width: $screen-sm) {
+          padding: 0 26.5px;
+          line-height: 36px;
+          color: #ffd1a2;
+          border: 1px solid #ffd1a2;
+          background-color: transparent;
+          min-width: 140px;
+          font-size: 14px;
+          i {
+            display: none;
+          }
+          &:hover {
+            background: #ffd1a2;
+            color: #05699b;
+          }
+        }
+      }
+    }
+  }
+  .main-footer {
+    a {
+      &:hover {
+        color: #ffd1a2;
+      }
+    }
+  }
+}

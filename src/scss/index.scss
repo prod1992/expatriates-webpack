@@ -1,0 +1,24 @@
+//VARIABLES
+@import "./vars";
+
+@import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
+
+@import "./mixins";
+@import "./utilities";
+@import "./fonts";
+@import './icons';
+
+@import './forms';
+@import './buttons';
+
+@import "./typo";
+@import "./header";
+@import "./general";
+@import "./home";
+@import "./region";
+@import "./search-feature";
+@import "./app-download";
+@import "./footer";
+
+@import "./responsive";
+

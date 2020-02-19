@@ -1,0 +1,31 @@
+.text-xs-right {
+  @media(max-width: $screen-xs-max) {
+    text-align: right;
+  }
+}
+
+.text-xs-left {
+  @media(max-width: $screen-xs-max) {
+    text-align: left;
+  }
+}
+
+strong {
+  font-weight: 500;
+}
+
+.font-weight-light {
+  font-weight: 300;
+}
+
+.text-info {
+  color: #1e0fcc;
+}
+
+.text-danger {
+  color: #ef4141;
+}
+
+.text-success {
+  color: #23b89a;
+}
