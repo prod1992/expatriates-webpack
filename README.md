@@ -1,4 +1,4 @@
-[![Netlify Status](https://api.netlify.com/api/v1/badges/6f30c313-f6f7-4763-97c4-96ac246faa87/deploy-status)](https://app.netlify.com/sites/fusebench-chat-ui/deploys)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/9786f10f-078e-4e3c-891d-948ac07574b0/deploy-status)](https://app.netlify.com/sites/expatriates-webpack/deploys)
 
 **Edit a file, create a new file, and clone from Bitbucket in under 2 minutes**
 
