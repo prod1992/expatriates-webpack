@@ -37,8 +37,7 @@ const config = function (env, args) {
 
     return {
         entry: {
-            app: "./src/js/app.js",
-            homepage: "./src/js/homepage.js"
+            app: "./src/js/app.js"
         },
         output: {
             filename: "js/[name].js",
@@ -150,6 +149,20 @@ const config = function (env, args) {
                 hash: false,
                 filename: "region-page.html",
                 template: path.resolve(__dirname, "src", "pages", "region-page.html"),
+                favicon: path.resolve(__dirname, "src", "images", "favicon.ico")
+            }),
+            new HtmlWebpackPlugin({
+                inject: true,
+                hash: false,
+                filename: "search-page.html",
+                template: path.resolve(__dirname, "src", "pages", "search-page.html"),
+                favicon: path.resolve(__dirname, "src", "images", "favicon.ico")
+            }),
+            new HtmlWebpackPlugin({
+                inject: true,
+                hash: false,
+                filename: "ad-place.html",
+                template: path.resolve(__dirname, "src", "pages", "ad-place.html"),
                 favicon: path.resolve(__dirname, "src", "images", "favicon.ico")
             }),
             new MiniCssExtractPlugin({

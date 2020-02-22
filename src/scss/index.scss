@@ -2,6 +2,7 @@
 @import "./vars";
 
 @import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
+@import "../../node_modules/select2/src/scss/core";
 
 @import "./mixins";
 @import "./utilities";
@@ -9,6 +10,7 @@
 @import './icons';
 
 @import './forms';
+@import "./select2";
 @import './buttons';
 
 @import "./typo";
@@ -24,6 +26,7 @@
 @import "./app-download";
 @import "./my-profile";
 
+@import "./place-an-ad";
 @import "./ad-actions";
 @import "./ads-feed";
 @import "./single-ad";

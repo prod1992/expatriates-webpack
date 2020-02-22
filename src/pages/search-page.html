@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="ISO-8859-15" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Premium / Expatriates</title>
+  </head>
+  <body>
+    <!-- MAIN HEADER -->
+    <header class="main-header clearfix">
+      <!-- Overlay -->
+      <div class="dark-overlay"></div>
+      <div class="container-fluid">
+        <a href="/" class="menu_toggler">
+          <span class="line top"></span>
+          <span class="line mid"></span>
+          <span class="line bot"></span>
+        </a>
+        <h2 class="logo">
+          <a href="/">
+            <span class="logo_icon"> </span>
+            <span class="logo_top">expatriates.com</span>
+            <span class="logo_bot">The online community for expatriates</span>
+          </a>
+        </h2>
+        <nav id="menu" class="main-nav desktop-nav">
+          <ul>
+            <li class="logo-in-nav">
+              <h2 class="logo">
+                <a href="/">
+                  <span class="logo_icon"> </span>
+                  <span class="logo_top">expatriates.com</span>
+                  <span class="logo_bot"
+                    >The online community for expatriates</span
+                  >
+                </a>
+              </h2>
+            </li>
+            <li>
+              <a href="/"><i class="nav_icon exp-icon-home"></i>Home</a>
+            </li>
+            <li>
+              <a href="/scripts/posting/subscribe.epl">
+                <i class="nav_icon exp-icon-letter"></i> Subscribe
+              </a>
+            </li>
+            <li>
+              <a href="/html/contactus.html"
+                ><i class="nav_icon exp-icon-letter"></i>Contact Us</a
+              >
+            </li>
+            <li>
+              <a href="#"><i class="nav_icon icon-signin"></i>Sign In</a>
+            </li>
+            <!-- <li>
+                            <a href="#"><i class="nav_icon icon-myprofile"></i>My Profile</a>
+                    </li>
+                    <li>
+                            <a href="#"><i class="nav_icon icon-signout"></i>Sign Out</a>
+                    </li> -->
+            <li class="btn_li">
+              <a
+                href="/cgi-local/placead/index.pl"
+                class="btn btn-primary btn-block btn-with-icon icon-on-left"
+                ><i class="exp-icon-plus_rounded"></i>Place an Ad</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <!-- MAIN HEADER ends -->
+    <!-- MAIN CONTENT start -->
+    <div class="main_content bg-darker">
+      <!-- BREADCRUMB -->
+      <div class="exp_breadcrumb">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-md-12">
+              <ul class="breadcrumb">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">International</a></li>
+                <li><a href="#">Saudi Arabia</a></li>
+                <li><a href="#">Eastern Province</a></li>
+                <li><a href="#">Items For Sale</a></li>
+                <li class="active"><a href="#">Auto Parts</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- BREADCRUMB ends -->
+      <!-- SEARCH PAGE -->
+      <div class="page_section search_page">
+        <div class="container-fluid">
+          <div class="row gutter-10">
+            <div class="col-md-4">
+              <!-- SEARCH FILTERS -->
+              <aside class="search_filters">
+                <div class="white_box">
+                  <h4 class="search_filters_title">
+                    <i class="exp-icon-filter"></i>Filters
+                  </h4>
+                  <form id="search_filters_form">
+                    <div class="row gutter-5">
+                      <div class="col-md-12">
+                        <div class="form-group input_wrapper">
+                          <i class="exp-icon-search"></i>
+                          <input
+                            class="form-control"
+                            type="text"
+                            placeholder="Search"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row gutter-5">
+                      <div class="col-md-12">
+                        <div class="form-group has-clear">
+                          <div class="ui-front">
+                            <input
+                              id="mmAutocomplete"
+                              class="form-control autocomplete"
+                              type="text"
+                              placeholder="Make and Model"
+                              data-source='[{ "label": "Croatia", "value": "105" },{ "label": "Cyprus", "value": "89" },{ "label": "Czech Rep.", "value": "45" },{ "label": "Dali", "value": "1241" },{ "label": "Damascus", "value": "1150" },{ "label": "Dammam", "value": "1126" },{ "label": "Dar es Salaam", "value": "1191" },{ "label": "Davao City", "value": "1237" },{ "label": "Denmark", "value": "48" },{ "label": "Dhahran", "value": "1185" },{ "label": "Dhaka", "value": "1213" },{ "label": "Diplomatic Quarter", "value": "1357" },{ "label": "Doha", "value": "1096" },{ "label": "Dominican Republic", "value": "1206" },{ "label": "Dortmund", "value": "1168" },{ "label": "Dubai", "value": "1026" },{ "label": "Dubai-Sharjah-Ajman (DSA)", "value": "401" },{ "label": "Dublin", "value": "1038" },{ "label": "Dusseldorf", "value": "1107" },{ "label": "Duwadimi", "value": "1347" },{ "label": "Eastern Province", "value": "400" },{ "label": "Ecuador", "value": "130" },{ "label": "Edinburgh", "value": "1129" },{ "label": "Edmonton", "value": "1290" },{ "label": "Egypt", "value": "66" },{ "label": "El Salvador", "value": "137" },{ "label": "Erbil", "value": "1197" },{ "label": "Estonia", "value": "133" },{ "label": "Ethiopia", "value": "121" },{ "label": "Faisalabad", "value": "1309" },{ "label": "Fiji", "value": "1199" },{ "label": "Finland", "value": "46" },{ "label": "Florence, Tuscany", "value": "1008" },{ "label": "France", "value": "7" },{ "label": "Frankfurt", "value": "1090" },{ "label": "Fujairah", "value": "1318" },{ "label": "Fuzhou", "value": "1201" },{ "label": "Galway", "value": "1157" },{ "label": "Gaziantep", "value": "1310" },{ "label": "Gelsenkirchen", "value": "1169" },{ "label": "General Santos City", "value": "1236" },{ "label": "Geneva", "value": "1028" },{ "label": "Georgia", "value": "144" },{ "label": "Germany", "value": "13" },{ "label": "Gibraltar (UK)", "value": "1192" },{ "label": "Goa", "value": "1125" },{ "label": "Greece", "value": "42" },{ "label": "Guangzhou", "value": "1164" },{ "label": "Guatemala", "value": "128" },{ "label": "Guatemala City", "value": "1234" },{ "label": "Gudaibiya", "value": "1343" },{ "label": "Gulbarga", "value": "1372" },{ "label": "Hafar Al-Batin", "value": "1303" },{ "label": "Hail", "value": "1255" },{ "label": "Hair", "value": "1360" },{ "label": "Hamad Town", "value": "1324" },{ "label": "Hamburg", "value": "1108" },{ "label": "Hamilton-Burlington", "value": "1293" },{ "label": "Hanover", "value": "1167" },{ "label": "Hara", "value": "1376" },{ "label": "Haryana", "value": "1352" },{ "label": "Hasa", "value": "1183" },{ "label": "Heidelberg", "value": "1123" },{ "label": "Helsinki", "value": "1034" },{ "label": "Hidd", "value": "1325" },{ "label": "Ho Chi Minh City", "value": "1139" },{ "label": "Honduras", "value": "127" },{ "label": "Hong Kong", "value": "1018" },{ "label": "Hoora", "value": "1334" },{ "label": "Houston", "value": "1173" },{ "label": "Hungary", "value": "51" },{ "label": "Hyderabad", "value": "1069" },{ "label": "Iceland", "value": "86" },{ "label": "India", "value": "50" },{ "label": "Indonesia", "value": "67" },{ "label": "Iran", "value": "98" },{ "label": "Iraq", "value": "109" },{ "label": "Ireland", "value": "52" },{ "label": "Isa Town", "value": "1330" },{ "label": "Islamabad", "value": "1052" },{ "label": "Israel", "value": "92" },{ "label": "Istanbul", "value": "1077" },{ "label": "Italy", "value": "22" },{ "label": "Izmir", "value": "1258" },{ "label": "Jakarta", "value": "1076" },{ "label": "Jamaica", "value": "1200" },{ "label": "Janabiya", "value": "1342" },{ "label": "Japan", "value": "35" },{ "label": "Jeddah", "value": "1055" },{ "label": "Jerusalem", "value": "1151" },{ "label": "Jidhafs", "value": "1340" },{ "label": "Jizan", "value": "1283" },{ "label": "Johannesburg", "value": "1132" },{ "label": "Jordan", "value": "95" },{ "label": "Jubail", "value": "1184" },{ "label": "Juffair", "value": "1326" },{ "label": "Kabul", "value": "1194" },{ "label": "Kaiserslautern", "value": "1170" },{ "label": "Kampala", "value": "1298" },{ "label": "Karachi", "value": "1079" },{ "label": "Kathmandu", "value": "1163" },{ "label": "Kazakhstan", "value": "117" },{ "label": "Kenya", "value": "55" },{ "label": "Kerala", "value": "1072" },{ "label": "Khafji", "value": "1187" },{ "label": "Kharj", "value": "1274" },{ "label": "Khartoum", "value": "1161" },{ "label": "Khobar", "value": "1182" },{ "label": "Kiev", "value": "1226" },{ "label": "King Abdullah Financial District", "value": "1369"}]'
+                              data-value="make_model"
+                            />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row gutter-5">
+                      <div class="col-md-6">
+                        <div class="form-group">
+                          <input
+                            class="form-control"
+                            type="text"
+                            placeholder="Min Price"
+                          />
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="form-group">
+                          <input
+                            class="form-control"
+                            type="text"
+                            placeholder="Max Price"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row gutter-5">
+                      <div class="col-md-6">
+                        <div class="form-group">
+                          <select
+                            title="Transmission"
+                            class="form-control"
+                            style="width:100%;"
+                            data-placeholder="Transmission"
+                          >
+                            <option value=""></option>
+                            <option>Manual</option>
+                            <option>Automatic</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="form-group">
+                          <select
+                            title="Milleage"
+                            class="form-control"
+                            style="width:100%;"
+                            data-placeholder="Milleage"
+                          >
+                            <option value=""></option>
+                            <option>below 20.000</option>
+                            <option>below 30.000</option>
+                            <option>below 40.000</option>
+                            <option>below 50.000</option>
+                            <option>below 60.000</option>
+                            <option>below 70.000</option>
+                            <option>below 80.000</option>
+                            <option>below 90.000</option>
+                            <option>below 100.000</option>
+                            <option>below 110.000</option>
+                            <option>below 120.000</option>
+                            <option>below 130.000</option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row gutter-5">
+                      <div class="col-md-6">
+                        <div class="form-group">
+                          <input
+                            class="form-control"
+                            type="text"
+                            placeholder="Min Year"
+                          />
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="form-group">
+                          <input
+                            class="form-control"
+                            type="text"
+                            placeholder="Max Year"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row gutter-5">
+                      <div class="col-md-12">
+                        <div class="form-group">
+                          <div class="exp_checkbox">
+                            <input
+                              type="checkbox"
+                              name="only_with_pics"
+                              id="only_with_pics"
+                            />
+                            <label for="only_with_pics"
+                              ><span class="input_box"></span>Only with
+                              picture</label
+                            >
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row gutter-5">
+                      <div class="col-md-12">
+                        <div class="form-group">
+                          <button class="btn btn-primary btn-primary-gradient2">
+                            Search
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row gutter-5">
+                      <div class="col-md-12 text-right">
+                        <div class="form-group reset-group">
+                          <button class="reset_filters_btn">
+                            Reset Filters
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </aside>
+              <!-- SEARCH FILTERS ends -->
+            </div>
+            <div class="col-md-8">
+              <div class="ads_feed">
+                <ul>
+                  <li>
+                    <a href="#">
+                      <div class="white_box single_ad__box">
+                        <div class="single_ad__thumb">
+                          <img
+                            class="img-responsive"
+                            src="/images/ad-image_05.jpg"
+                            alt=""
+                          />
+                        </div>
+                        <h4 class="single_ad__title">
+                          Mercedes-Benz Sprinter 2015
+                        </h4>
+                        <p class="single_ad__descr">
+                          ABS, Air Bag, Immobiliser, Remote Alarm, Remote
+                          Central Locking, Power Steering, Electric Windows,
+                          Trip Computer, Player, Height Adjustable Seat,
+                          Multi-function Steering Wheel, Retractable Headrests
+                          ...
+                        </p>
+                        <p class="single_ad__details clearfix">
+                          <span class="pull-left"
+                            ><i class="exp-icon-location"></i>Saudi Arabia,
+                            Eastern Province</span
+                          >
+                          <span class="pull-right"
+                            ><i class="exp-icon-time"></i>2 Hours Ago</span
+                          >
+                        </p>
+                      </div>
+                    </a>
+                    <button aria-pressed="false" class="in_favorites">
+                      <i class="exp-icon-star-filled"></i>
+                    </button>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <!-- ONE AD -->
+                      <div class="white_box single_ad__box">
+                        <div class="single_ad__thumb">
+                          <img
+                            class="img-responsive"
+                            src="/images/ad-image_05.jpg"
+                            alt=""
+                          />
+                        </div>
+                        <h4 class="single_ad__title">
+                          Mercedes-Benz Sprinter 2015
+                        </h4>
+                        <p class="single_ad__descr">
+                          ABS, Air Bag, Immobiliser, Remote Alarm, Remote
+                          Central Locking, Power Steering, Electric Windows,
+                          Trip Computer, Player, Height Adjustable Seat,
+                          Multi-function Steering Wheel, Retractable Headrests
+                          ...
+                        </p>
+                        <p class="single_ad__details clearfix">
+                          <span class="pull-left"
+                            ><i class="exp-icon-location"></i>Saudi Arabia,
+                            Eastern Province</span
+                          >
+                          <span class="pull-right"
+                            ><i class="exp-icon-time"></i>2 Hours Ago</span
+                          >
+                        </p>
+                      </div>
+                      <!-- ONE AD ends -->
+                    </a>
+                    <button aria-pressed="false" class="in_favorites">
+                      <i class="exp-icon-star-filled"></i>
+                    </button>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <!-- ONE AD -->
+                      <div class="white_box single_ad__box">
+                        <div class="single_ad__thumb">
+                          <img
+                            class="img-responsive"
+                            src="/images/ad-image_05.jpg"
+                            alt=""
+                          />
+                        </div>
+                        <h4 class="single_ad__title">
+                          Mercedes-Benz Sprinter 2015
+                        </h4>
+                        <p class="single_ad__descr">
+                          ABS, Air Bag, Immobiliser, Remote Alarm, Remote
+                          Central Locking, Power Steering, Electric Windows,
+                          Trip Computer, Player, Height Adjustable Seat,
+                          Multi-function Steering Wheel, Retractable Headrests
+                          ...
+                        </p>
+                        <p class="single_ad__details clearfix">
+                          <span class="pull-left"
+                            ><i class="exp-icon-location"></i>Saudi Arabia,
+                            Eastern Province</span
+                          >
+                          <span class="pull-right"
+                            ><i class="exp-icon-time"></i>2 Hours Ago</span
+                          >
+                        </p>
+                      </div>
+                      <!-- ONE AD ends -->
+                    </a>
+                    <button aria-pressed="false" class="in_favorites">
+                      <i class="exp-icon-star-filled"></i>
+                    </button>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <!-- ONE AD -->
+                      <div class="white_box single_ad__box">
+                        <div class="single_ad__thumb">
+                          <img
+                            class="img-responsive"
+                            src="/images/ad-image_05.jpg"
+                            alt=""
+                          />
+                        </div>
+                        <h4 class="single_ad__title">
+                          Mercedes-Benz Sprinter 2015
+                        </h4>
+                        <p class="single_ad__descr">
+                          ABS, Air Bag, Immobiliser, Remote Alarm, Remote
+                          Central Locking, Power Steering, Electric Windows,
+                          Trip Computer, Player, Height Adjustable Seat,
+                          Multi-function Steering Wheel, Retractable Headrests
+                          ...
+                        </p>
+                        <p class="single_ad__details clearfix">
+                          <span class="pull-left"
+                            ><i class="exp-icon-location"></i>Saudi Arabia,
+                            Eastern Province</span
+                          >
+                          <span class="pull-right"
+                            ><i class="exp-icon-time"></i>2 Hours Ago</span
+                          >
+                        </p>
+                        <button aria-pressed="true" class="in_favorites in">
+                          <i class="exp-icon-star-filled"></i>
+                        </button>
+                      </div>
+                      <!-- ONE AD ends -->
+                    </a>
+                    <button aria-pressed="false" class="in_favorites">
+                      <i class="exp-icon-star-filled"></i>
+                    </button>
+                  </li>
+                </ul>
+                <!-- ONE AD ends -->
+              </div>
+              <div class="text-center">
+                <ul class="pagination">
+                  <li class="active"><a href="index.html">1</a></li>
+                  <li><a href="#">2</a></li>
+                  <li><a href="#">3</a></li>
+                  <li><a href="#">4</a></li>
+                  <li><a href="#">5</a></li>
+                  <li><a href="#">6</a></li>
+                  <li><a href="#">7</a></li>
+                  <li><a href="#">8</a></li>
+                  <li><a href="#">9</a></li>
+                  <li><a href="#">10</a></li>
+                  <li><a href="#">11</a></li>
+                  <li><a href="#">12</a></li>
+                  <li><span>&nbsp;...&nbsp;</span></li>
+                  <li><a href="#">250</a></li>
+                  <li><a href="#">Next</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- SEARCH PAGE ends -->
+      <!-- APP DOWNLOAD -->
+      <div class="page_section app_download">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-md-12">
+              <img
+                class="app_download__logo"
+                src="/images/app-logo_03.png"
+                alt=""
+              />
+              <p class="sans app_download__content">
+                Android mobile app is now available for testing. To try it,
+                please sign up <a href="#">here</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- APP DOWNLOAD ends -->
+    </div>
+    <!-- MAIN CONTENT ends -->
+    <!-- FOOTER -->
+    <footer>
+      <div class="container-fluid">
+        <!-- FOOTER TOP -->
+        <div class="footer_top">
+          <div class="row">
+            <div class="col-md-9 footer_top__left">
+              <div class="row">
+                <div class="col-xs-6 col-sm-4 col-md-3">
+                  <div class="footer_col">
+                    <h4 class="footer_col__title">Platform</h4>
+                    <ul>
+                      <li><a href="#">Advertising</a></li>
+                      <li><a href="#">Terms of Use</a></li>
+                      <li><a href="#">Privacy</a></li>
+                      <li><a href="#">System Status</a></li>
+                      <li><a href="#">Unsubscribe</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col-xs-6 col-sm-4 col-md-3 text-xs-right">
+                  <div class="footer_col">
+                    <h4 class="footer_col__title">Support</h4>
+                    <ul>
+                      <li><a href="#">Contact support</a></li>
+                      <li><a href="#">Give feedback</a></li>
+                      <li><a href="#">Knowledge Base</a></li>
+                      <li><a href="#">All articles</a></li>
+                      <li><a href="#">FAQ</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col-xs-12 col-md-3 col-sm-4">
+                  <div class="footer_col">
+                    <h4 class="footer_col__title">Contact Us</h4>
+                    <ul>
+                      <li><a href="#">Post a new idea</a></li>
+                      <li><a href="#">All ideas</a></li>
+                      <li><a href="#">My feedback</a></li>
+                      <li><a href="#">General Feedback</a></li>
+                      <li><a href="#">Report Defect</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3 footer_top__right">
+              <div class="row hidden-xs hidden-sm">
+                <div class="col-xs-12">
+                  <a class="btn btn-block btn-primary" href="#"
+                    >Place a Free Ad</a
+                  >
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-xs-12">
+                  <div class="follow_place">
+                    <div class="row gutter-10 flex-row">
+                      <div class="col-xs-4 text-left">
+                        <p>Follow us</p>
+                      </div>
+                      <div class="col-xs-8 text-right">
+                        <ul class="social_ul">
+                          <li>
+                            <a href="#">
+                              <i class="exp-icon-facebook-logo"></i>
+                            </a>
+                          </li>
+                          <li>
+                            <a href="#">
+                              <i class="exp-icon-instagram-logo"></i>
+                            </a>
+                          </li>
+                          <li>
+                            <a href="#">
+                              <i class="exp-icon-twitter-logo"></i>
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- FOOTER TOP ends-->
+        <!-- FOOTER BOTTOM -->
+        <div class="footer_bottom">
+          <div class="row">
+            <div class="col-md-12">
+              <p class="footer_copy">
+                Copyright 2017 Expatriates.com | All rights reserved
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- FOOTER BOTTOM ends -->
+      </div>
+    </footer>
+    <!-- FOOTER ends -->
+  </body>
+</html>
