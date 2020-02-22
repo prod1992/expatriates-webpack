@@ -1,0 +1,1533 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="ISO-8859-15" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Premium / Expatriates</title>
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <!-- build:css({.tmp/app,src}) styles/style3.0.css -->
+    <!-- bower:css -->
+    <!-- run `gulp inject` to automatically populate bower styles dependencies -->
+    <!-- endbower -->
+    <!-- inject:css -->
+    <!-- css files will be automatically insert here -->
+    <!-- endinject -->
+    <!-- endbuild -->
+  </head>
+
+  <body>
+    <!-- MAIN HEADER -->
+    <header class="main-header clearfix">
+      <!-- Overlay -->
+      <div class="dark-overlay"></div>
+      <div class="container-fluid">
+        <a href="/" class="menu_toggler">
+          <span class="line top"></span>
+          <span class="line mid"></span>
+          <span class="line bot"></span>
+        </a>
+        <h2 class="logo">
+          <a href="/">
+            <span class="logo_icon"> </span>
+            <span class="logo_top">expatriates.com</span>
+            <span class="logo_bot">The online community for expatriates</span>
+          </a>
+        </h2>
+        <nav id="menu" class="main-nav desktop-nav">
+          <ul>
+            <li class="logo-in-nav">
+              <h2 class="logo">
+                <a href="/">
+                  <span class="logo_icon"> </span>
+                  <span class="logo_top">expatriates.com</span>
+                  <span class="logo_bot"
+                    >The online community for expatriates</span
+                  >
+                </a>
+              </h2>
+            </li>
+            <li>
+              <a href="/"><i class="nav_icon exp-icon-home"></i>Home</a>
+            </li>
+            <li>
+              <a href="/scripts/posting/subscribe.epl">
+                <i class="nav_icon exp-icon-letter"></i> Subscribe
+              </a>
+            </li>
+            <li>
+              <a href="/html/contactus.html"
+                ><i class="nav_icon exp-icon-letter"></i>Contact Us</a
+              >
+            </li>
+            <li>
+              <a href="#"><i class="nav_icon icon-signin"></i>Sign In</a>
+            </li>
+            <!-- <li>
+						<a href="#"><i class="nav_icon icon-myprofile"></i>My Profile</a>
+				</li>
+				<li>
+						<a href="#"><i class="nav_icon icon-signout"></i>Sign Out</a>
+				</li> -->
+            <li class="btn_li">
+              <a
+                href="/cgi-local/placead/index.pl"
+                class="btn btn-primary btn-block btn-with-icon icon-on-left"
+                ><i class="exp-icon-plus_rounded"></i>Place an Ad</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <!-- MAIN HEADER ends -->
+    <!-- MAIN CONTENT start -->
+    <div class="main_content">
+      <!-- MY PROFILE TOP start -->
+      <div class="page_section my_profile_top">
+        <div class="container-fluid">
+          <div class="profile_info">
+            <div class="row">
+              <div class="col-xs-12 text-center">
+                <div class="media">
+                  <div class="media-left thumb_col">
+                    <span class="usr_pic no_image"></span>
+                  </div>
+                  <div class="media-body media-middle text-left">
+                    <h4 class="profile_name">Thomas James</h4>
+                    <p class="profile_email">thomasjames@yahoo.com</p>
+                    <p class="profile_location">Bucharest</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <ul class="nav nav-tabs my_nav" role="tablist">
+            <li role="presentation" class="active">
+              <a
+                href="#my_ads_tab"
+                aria-controls="my_ads_tab"
+                role="tab"
+                data-toggle="tab"
+                >My Ads</a
+              >
+            </li>
+            <li role="presentation">
+              <a
+                href="#favourites_tab"
+                aria-controls="favourites_tab"
+                role="tab"
+                data-toggle="tab"
+                >Favorites</a
+              >
+            </li>
+            <li role="presentation">
+              <a
+                href="#my_profile_tab"
+                aria-controls="my_profile_tab"
+                role="tab"
+                data-toggle="tab"
+                >My Profile</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- MY PROFILE TOP ends -->
+      <div class="page_section bg-darker tab-content my_profile__content">
+        <div class="tab-pane fade in active" role="tabpanel" id="my_ads_tab">
+          <!-- MY ADS start -->
+          <div class="my_ads">
+            <div class="container-fluid">
+              <div class="row gutter-10">
+                <div class="col-md-4">
+                  <!-- SEARCH FILTERS -->
+                  <aside class="search_filters">
+                    <div class="white_box">
+                      <h4 class="search_filters_title">
+                        <i class="exp-icon-filter"></i>Filters
+                      </h4>
+                      <form id="search_filters_form"></form>
+
+                      <div class="row gutter-5">
+                        <div class="col-md-12">
+                          <div class="form-group">
+                            <div class="input_wrapper">
+                              <i class="exp-icon-search"></i>
+                              <input
+                                class="form-control"
+                                type="text"
+                                placeholder="Search"
+                              />
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="row gutter-5">
+                        <div class="col-md-12">
+                          <div class="form-group">
+                            <input
+                              class="form-control"
+                              type="text"
+                              placeholder="Make and Model"
+                            />
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="row gutter-5">
+                        <div class="col-md-6">
+                          <div class="form-group">
+                            <input
+                              class="form-control"
+                              type="text"
+                              placeholder="Min Year"
+                            />
+                          </div>
+                        </div>
+                        <div class="col-md-6">
+                          <div class="form-group">
+                            <input
+                              class="form-control"
+                              type="text"
+                              placeholder="Max Year"
+                            />
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="row gutter-5">
+                        <div class="col-md-6">
+                          <div class="form-group">
+                            <select
+                              title="Transmission"
+                              class="form-control"
+                              style="width:100%;"
+                              data-placeholder="Transmission"
+                            >
+                              <option value=""></option>
+                              <option>Manual</option>
+                              <option>Automatic</option>
+                            </select>
+                          </div>
+                        </div>
+                        <div class="col-md-6">
+                          <div class="form-group">
+                            <select
+                              title="Milleage"
+                              class="form-control"
+                              style="width:100%;"
+                              data-placeholder="Milleage"
+                            >
+                              <option value=""></option>
+                              <option>below 20.000</option>
+                              <option>below 30.000</option>
+                              <option>below 40.000</option>
+                              <option>below 50.000</option>
+                              <option>below 60.000</option>
+                              <option>below 70.000</option>
+                              <option>below 80.000</option>
+                              <option>below 90.000</option>
+                              <option>below 100.000</option>
+                              <option>below 110.000</option>
+                              <option>below 120.000</option>
+                              <option>below 130.000</option>
+                            </select>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="row gutter-5">
+                        <div class="col-md-6">
+                          <div class="form-group">
+                            <input
+                              class="form-control"
+                              type="text"
+                              placeholder="Min Year"
+                            />
+                          </div>
+                        </div>
+                        <div class="col-md-6">
+                          <div class="form-group">
+                            <input
+                              class="form-control"
+                              type="text"
+                              placeholder="Max Year"
+                            />
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="row gutter-5">
+                        <div class="col-md-12">
+                          <div class="exp_checkbox">
+                            <div class="form-group">
+                              <input
+                                type="checkbox"
+                                name="only_with_pics2"
+                                id="only_with_pics2"
+                              />
+                              <label for="only_with_pics2"
+                                ><span class="input_box"></span>Only with
+                                picture</label
+                              >
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="row gutter-5">
+                        <div class="col-md-12">
+                          <div class="form-group">
+                            <button
+                              class="btn btn-primary btn-primary-gradient"
+                            >
+                              Search
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="row gutter-5">
+                        <div class="col-md-12 text-right">
+                          <div class="form-group">
+                            <button class="reset_filters_btn">
+                              Reset Filters
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </aside>
+                  <!-- SEARCH FILTERS ends -->
+                </div>
+                <div class="col-md-8">
+                  <div class="ads_feed">
+                    <ul>
+                      <li>
+                        <!-- AD ACTIONS start -->
+                        <div class="single_ad__actions">
+                          <ul>
+                            <li>
+                              <button class="button icon-centered">
+                                <i class="exp-icon-noun_899585_cc"></i>
+                              </button>
+                            </li>
+                            <li>
+                              <button
+                                class="button icon-centered"
+                                data-toggle="modal"
+                                data-target="#removeAd"
+                              >
+                                <i class="exp-icon-noun_40408_cc"></i>
+                              </button>
+                            </li>
+                            <li>
+                              <a
+                                class="button icon-centered"
+                                href="ad-single-premium.html"
+                              >
+                                <i class="exp-icon-noun_430013_cc"></i>
+                              </a>
+                            </li>
+                          </ul>
+                        </div>
+                        <!-- AD ACTIONS end -->
+                        <a href="#">
+                          <div class="white_box single_ad__box has_actions">
+                            <div class="single_ad__status inactive">
+                              Inactive
+                            </div>
+                            <div class="single_ad__thumb">
+                              <img
+                                class="img-responsive"
+                                src="/images/ad-image_05.jpg"
+                                alt=""
+                              />
+                            </div>
+                            <h4 class="single_ad__title">
+                              Mercedes-Benz Sprinter 2015
+                            </h4>
+                            <p class="single_ad__descr">
+                              ABS, Air Bag, Immobiliser, Remote Alarm, Remote
+                              Central Locking, Power Steering, Electric Windows,
+                              Trip Computer, Player, Height Adjustable Seat,
+                              Multi-function Steering Wheel, Retractable
+                              Headrests ...
+                            </p>
+                            <p class="single_ad__details clearfix">
+                              <span class="pull-left"
+                                ><i class="exp-icon-location"></i>Saudi Arabia,
+                                Eastern Province</span
+                              >
+                              <span class="pull-right"
+                                ><i class="exp-icon-time"></i>2 Hours Ago</span
+                              >
+                            </p>
+                          </div>
+                        </a>
+                      </li>
+                      <li>
+                        <!-- AD ACTIONS start -->
+                        <div class="single_ad__actions">
+                          <ul>
+                            <li>
+                              <button class="button icon-centered">
+                                <i class="exp-icon-noun_899585_cc"></i>
+                              </button>
+                            </li>
+                            <li>
+                              <button
+                                class="button icon-centered"
+                                data-toggle="modal"
+                                data-target="#removeAd"
+                              >
+                                <i class="exp-icon-noun_40408_cc"></i>
+                              </button>
+                            </li>
+                            <li>
+                              <a
+                                class="button icon-centered"
+                                href="ad-single-premium.html"
+                              >
+                                <i class="exp-icon-noun_430013_cc"></i>
+                              </a>
+                            </li>
+                          </ul>
+                        </div>
+                        <a href="#">
+                          <!-- AD ACTIONS end -->
+                          <div class="white_box single_ad__box has_actions">
+                            <div class="single_ad__status active">
+                              Active
+                            </div>
+                            <div class="single_ad__thumb">
+                              <img
+                                class="img-responsive"
+                                src="/images/ad-image_05.jpg"
+                                alt=""
+                              />
+                            </div>
+                            <h4 class="single_ad__title">
+                              Mercedes-Benz Sprinter 2015
+                            </h4>
+                            <p class="single_ad__descr">
+                              ABS, Air Bag, Immobiliser, Remote Alarm, Remote
+                              Central Locking, Power Steering, Electric Windows,
+                              Trip Computer, Player, Height Adjustable Seat,
+                              Multi-function Steering Wheel, Retractable
+                              Headrests ...
+                            </p>
+                            <p class="single_ad__details clearfix">
+                              <span class="pull-left"
+                                ><i class="exp-icon-location"></i>Saudi Arabia,
+                                Eastern Province</span
+                              >
+                              <span class="pull-right"
+                                ><i class="exp-icon-time"></i>2 Hours Ago</span
+                              >
+                            </p>
+                          </div>
+                          <!-- SINGLE AD ends -->
+                        </a>
+                      </li>
+                      <li>
+                        <!-- AD ACTIONS start -->
+                        <div class="single_ad__actions">
+                          <ul>
+                            <li>
+                              <button class="button icon-centered">
+                                <i class="exp-icon-noun_899585_cc"></i>
+                              </button>
+                            </li>
+                            <li>
+                              <button
+                                class="button icon-centered"
+                                data-toggle="modal"
+                                data-target="#removeAd"
+                              >
+                                <i class="exp-icon-noun_40408_cc"></i>
+                              </button>
+                            </li>
+                            <li>
+                              <a
+                                class="button icon-centered"
+                                href="ad-single-premium.html"
+                              >
+                                <i class="exp-icon-noun_430013_cc"></i>
+                              </a>
+                            </li>
+                          </ul>
+                        </div>
+                        <!-- AD ACTIONS end -->
+                        <a href="#">
+                          <!-- SINGLE AD -->
+                          <div class="white_box single_ad__box has_actions">
+                            <div class="single_ad__status promoted">
+                              Promoted
+                            </div>
+                            <div class="single_ad__thumb">
+                              <img
+                                class="img-responsive"
+                                src="/images/ad-image_05.jpg"
+                                alt=""
+                              />
+                              <span class="prom_icon"
+                                ><i class="exp-icon-noun_607266_cc"></i
+                              ></span>
+                            </div>
+                            <h4 class="single_ad__title">
+                              Mercedes-Benz Sprinter 2015
+                            </h4>
+                            <p class="single_ad__descr">
+                              ABS, Air Bag, Immobiliser, Remote Alarm, Remote
+                              Central Locking, Power Steering, Electric Windows,
+                              Trip Computer, Player, Height Adjustable Seat,
+                              Multi-function Steering Wheel, Retractable
+                              Headrests ...
+                            </p>
+                            <p class="single_ad__details clearfix">
+                              <span class="pull-left"
+                                ><i class="exp-icon-location"></i>Saudi Arabia,
+                                Eastern Province</span
+                              >
+                              <span class="pull-right"
+                                ><i class="exp-icon-time"></i>2 Hours Ago</span
+                              >
+                            </p>
+                          </div>
+                          <!-- SINGLE AD ends -->
+                        </a>
+                      </li>
+                      <li>
+                        <!-- AD ACTIONS start -->
+                        <div class="single_ad__actions">
+                          <ul>
+                            <li>
+                              <a
+                                class="button icon-centered"
+                                href="ad-single-modify.html"
+                              >
+                                <i class="exp-icon-noun_899585_cc"></i>
+                              </a>
+                            </li>
+                            <li>
+                              <button
+                                class="button icon-centered"
+                                data-toggle="modal"
+                                data-target="#removeAd"
+                              >
+                                <i class="exp-icon-noun_40408_cc"></i>
+                              </button>
+                            </li>
+                            <li>
+                              <a
+                                class="button icon-centered"
+                                href="ad-single-premium.html"
+                              >
+                                <i class="exp-icon-noun_430013_cc"></i>
+                              </a>
+                            </li>
+                          </ul>
+                        </div>
+                        <!-- AD ACTIONS end -->
+                        <a href="#">
+                          <!-- SINGLE AD -->
+                          <div class="white_box single_ad__box has_actions">
+                            <div class="single_ad__thumb">
+                              <img
+                                class="img-responsive"
+                                src="/images/ad-image_05.jpg"
+                                alt=""
+                              />
+                            </div>
+                            <h4 class="single_ad__title">
+                              Mercedes-Benz Sprinter 2015
+                            </h4>
+                            <p class="single_ad__descr">
+                              ABS, Air Bag, Immobiliser, Remote Alarm, Remote
+                              Central Locking, Power Steering, Electric Windows,
+                              Trip Computer, Player, Height Adjustable Seat,
+                              Multi-function Steering Wheel, Retractable
+                              Headrests ...
+                            </p>
+                            <p class="single_ad__details clearfix">
+                              <span class="pull-left"
+                                ><i class="exp-icon-location"></i>Saudi Arabia,
+                                Eastern Province</span
+                              >
+                              <span class="pull-right"
+                                ><i class="exp-icon-time"></i>2 Hours Ago</span
+                              >
+                            </p>
+                          </div>
+                          <!-- SINGLE AD ends -->
+                        </a>
+                      </li>
+                    </ul>
+                    <!-- SINGLE AD ends -->
+                  </div>
+                  <div class="text-center">
+                    <ul class="pagination">
+                      <li class="active"><a href="../index.html">1</a></li>
+                      <li><a href="#">2</a></li>
+                      <li><a href="#">3</a></li>
+                      <li><a href="#">4</a></li>
+                      <li><a href="#">5</a></li>
+                      <li><a href="#">6</a></li>
+                      <li><a href="#">7</a></li>
+                      <li><a href="#">8</a></li>
+                      <li><a href="#">9</a></li>
+                      <li><a href="#">10</a></li>
+                      <li><a href="#">11</a></li>
+                      <li><a href="#">12</a></li>
+                      <li><span>&nbsp;...&nbsp;</span></li>
+                      <li><a href="#">250</a></li>
+                      <li><a href="#">Next</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- MY ADS end -->
+        </div>
+        <div class="tab-pane fade" role="tabpanel" id="favourites_tab">
+          <!-- MY ADS start -->
+          <div class="page_section my_ads">
+            <div class="container-fluid">
+              <!-- SEARCH PLACE ends -->
+              <div class="row gutter-10">
+                <div class="col-md-4">
+                  <!-- SEARCH FILTERS -->
+                  <aside class="search_filters">
+                    <div class="white_box">
+                      <h4 class="search_filters_title">
+                        <i class="exp-icon-filter"></i>Filters
+                      </h4>
+                      <form id="search_filters_form2"></form>
+
+                      <div class="row gutter-5">
+                        <div class="col-md-12">
+                          <div class="form-group">
+                            <div class="input_wrapper">
+                              <i class="exp-icon-search"></i>
+                              <input
+                                class="form-control"
+                                type="text"
+                                placeholder="Search"
+                              />
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="row gutter-5">
+                        <div class="col-md-12">
+                          <div class="form-group">
+                            <input
+                              class="form-control"
+                              type="text"
+                              placeholder="Make and Model"
+                            />
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="row gutter-5">
+                        <div class="col-md-6">
+                          <div class="form-group">
+                            <input
+                              class="form-control"
+                              type="text"
+                              placeholder="Min Year"
+                            />
+                          </div>
+                        </div>
+                        <div class="col-md-6">
+                          <div class="form-group">
+                            <input
+                              class="form-control"
+                              type="text"
+                              placeholder="Max Year"
+                            />
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="row gutter-5">
+                        <div class="col-md-6">
+                          <div class="form-group">
+                            <select
+                              title="Transmission"
+                              class="form-control"
+                              style="width:100%;"
+                              data-placeholder="Transmission"
+                            >
+                              <option value=""></option>
+                              <option>Manual</option>
+                              <option>Automatic</option>
+                            </select>
+                          </div>
+                        </div>
+                        <div class="col-md-6">
+                          <div class="form-group">
+                            <select
+                              title="Milleage"
+                              class="form-control"
+                              style="width:100%;"
+                              data-placeholder="Milleage"
+                            >
+                              <option value=""></option>
+                              <option>below 20.000</option>
+                              <option>below 30.000</option>
+                              <option>below 40.000</option>
+                              <option>below 50.000</option>
+                              <option>below 60.000</option>
+                              <option>below 70.000</option>
+                              <option>below 80.000</option>
+                              <option>below 90.000</option>
+                              <option>below 100.000</option>
+                              <option>below 110.000</option>
+                              <option>below 120.000</option>
+                              <option>below 130.000</option>
+                            </select>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="row gutter-5">
+                        <div class="col-md-6">
+                          <div class="form-group">
+                            <input
+                              class="form-control"
+                              type="text"
+                              placeholder="Min Year"
+                            />
+                          </div>
+                        </div>
+                        <div class="col-md-6">
+                          <div class="form-group">
+                            <input
+                              class="form-control"
+                              type="text"
+                              placeholder="Max Year"
+                            />
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="row gutter-5">
+                        <div class="col-md-12">
+                          <div class="exp_checkbox">
+                            <div class="form-group">
+                              <input
+                                type="checkbox"
+                                name="only_with_pics"
+                                id="only_with_pics"
+                              />
+                              <label for="only_with_pics"
+                                ><span class="input_box"></span>Only with
+                                picture</label
+                              >
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="row gutter-5">
+                        <div class="col-md-12">
+                          <div class="form-group">
+                            <button
+                              class="btn btn-primary btn-primary-gradient"
+                            >
+                              Search
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="row gutter-5">
+                        <div class="col-md-12 text-right">
+                          <div class="form-group">
+                            <button class="reset_filters_btn">
+                              Reset Filters
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </aside>
+                  <!-- SEARCH FILTERS ends -->
+                </div>
+                <div class="col-md-8">
+                  <div class="ads_feed">
+                    <ul>
+                      <li>
+                        <!-- AD ACTIONS start -->
+                        <div class="single_ad__actions">
+                          <ul>
+                            <li>
+                              <a
+                                class="button icon-centered"
+                                href="ad-single-modify.html"
+                              >
+                                <i class="exp-icon-noun_899585_cc"></i>
+                              </a>
+                            </li>
+                            <li>
+                              <button
+                                class="button icon-centered"
+                                data-toggle="modal"
+                                data-target="#removeAd"
+                              >
+                                <i class="exp-icon-noun_40408_cc"></i>
+                              </button>
+                            </li>
+                            <li>
+                              <a
+                                class="button icon-centered"
+                                href="ad-single-premium.html"
+                              >
+                                <i class="exp-icon-noun_430013_cc"></i>
+                              </a>
+                            </li>
+                          </ul>
+                        </div>
+                        <!-- AD ACTIONS end -->
+                        <a href="#">
+                          <div class="white_box single_ad__box has_actions">
+                            <div class="single_ad__thumb">
+                              <img
+                                class="img-responsive"
+                                src="/images/ad-image_05.jpg"
+                                alt=""
+                              />
+                            </div>
+                            <h4 class="single_ad__title">
+                              Mercedes-Benz Sprinter 2015
+                            </h4>
+                            <p class="single_ad__descr">
+                              ABS, Air Bag, Immobiliser, Remote Alarm, Remote
+                              Central Locking, Power Steering, Electric Windows,
+                              Trip Computer, Player, Height Adjustable Seat,
+                              Multi-function Steering Wheel, Retractable
+                              Headrests ...
+                            </p>
+                            <p class="single_ad__details clearfix">
+                              <span class="pull-left"
+                                ><i class="exp-icon-location"></i>Saudi Arabia,
+                                Eastern Province</span
+                              >
+                              <span class="pull-right"
+                                ><i class="exp-icon-time"></i>2 Hours Ago</span
+                              >
+                            </p>
+                          </div>
+                        </a>
+                        <button aria-pressed="false" class="in_favorites in">
+                          <i class="exp-icon-star-filled"></i>
+                        </button>
+                      </li>
+                      <li>
+                        <!-- AD ACTIONS start -->
+                        <div class="single_ad__actions">
+                          <ul>
+                            <li>
+                              <button class="button icon-centered">
+                                <i class="exp-icon-noun_899585_cc"></i>
+                              </button>
+                            </li>
+                            <li>
+                              <button
+                                data-toggle="modal"
+                                data-target="#removeAd"
+                                class="button icon-centered"
+                              >
+                                <i class="exp-icon-noun_40408_cc"></i>
+                              </button>
+                            </li>
+                            <li>
+                              <a
+                                href="ad-single-premium.html"
+                                class="button icon-centered"
+                              >
+                                <i class="exp-icon-noun_430013_cc"></i>
+                              </a>
+                            </li>
+                          </ul>
+                        </div>
+                        <!-- AD ACTIONS end -->
+                        <a href="#">
+                          <div class="white_box single_ad__box has_actions">
+                            <div class="single_ad__thumb">
+                              <img
+                                class="img-responsive"
+                                src="/images/ad-image_05.jpg"
+                                alt=""
+                              />
+                            </div>
+                            <h4 class="single_ad__title">
+                              Mercedes-Benz Sprinter 2015
+                            </h4>
+                            <p class="single_ad__descr">
+                              ABS, Air Bag, Immobiliser, Remote Alarm, Remote
+                              Central Locking, Power Steering, Electric Windows,
+                              Trip Computer, Player, Height Adjustable Seat,
+                              Multi-function Steering Wheel, Retractable
+                              Headrests ...
+                            </p>
+                            <p class="single_ad__details clearfix">
+                              <span class="pull-left"
+                                ><i class="exp-icon-location"></i>Saudi Arabia,
+                                Eastern Province</span
+                              >
+                              <span class="pull-right"
+                                ><i class="exp-icon-time"></i>2 Hours Ago</span
+                              >
+                            </p>
+                          </div>
+                        </a>
+                        <button aria-pressed="false" class="in_favorites in">
+                          <i class="exp-icon-star-filled"></i>
+                        </button>
+                      </li>
+                      <li>
+                        <!-- AD ACTIONS start -->
+                        <div class="single_ad__actions">
+                          <ul>
+                            <li>
+                              <button class="button icon-centered">
+                                <i class="exp-icon-noun_899585_cc"></i>
+                              </button>
+                            </li>
+                            <li>
+                              <button
+                                data-toggle="modal"
+                                data-target="#removeAd"
+                                class="button icon-centered"
+                              >
+                                <i class="exp-icon-noun_40408_cc"></i>
+                              </button>
+                            </li>
+                            <li>
+                              <a
+                                href="ad-single-premium.html"
+                                class="button icon-centered"
+                              >
+                                <i class="exp-icon-noun_430013_cc"></i>
+                              </a>
+                            </li>
+                          </ul>
+                        </div>
+                        <!-- AD ACTIONS end -->
+                        <a href="#">
+                          <div class="white_box single_ad__box has_actions">
+                            <div class="single_ad__thumb">
+                              <img
+                                class="img-responsive"
+                                src="/images/ad-image_05.jpg"
+                                alt=""
+                              />
+                            </div>
+                            <h4 class="single_ad__title">
+                              Mercedes-Benz Sprinter 2015
+                            </h4>
+                            <p class="single_ad__descr">
+                              ABS, Air Bag, Immobiliser, Remote Alarm, Remote
+                              Central Locking, Power Steering, Electric Windows,
+                              Trip Computer, Player, Height Adjustable Seat,
+                              Multi-function Steering Wheel, Retractable
+                              Headrests ...
+                            </p>
+                            <p class="single_ad__details clearfix">
+                              <span class="pull-left"
+                                ><i class="exp-icon-location"></i>Saudi Arabia,
+                                Eastern Province</span
+                              >
+                              <span class="pull-right"
+                                ><i class="exp-icon-time"></i>2 Hours Ago</span
+                              >
+                            </p>
+                          </div>
+                        </a>
+                        <button aria-pressed="false" class="in_favorites in">
+                          <i class="exp-icon-star-filled"></i>
+                        </button>
+                      </li>
+                      <li>
+                        <!-- AD ACTIONS start -->
+                        <div class="single_ad__actions">
+                          <ul>
+                            <li>
+                              <button class="button icon-centered">
+                                <i class="exp-icon-noun_899585_cc"></i>
+                              </button>
+                            </li>
+                            <li>
+                              <button
+                                data-toggle="modal"
+                                data-target="#removeAd"
+                                class="button icon-centered"
+                              >
+                                <i class="exp-icon-noun_40408_cc"></i>
+                              </button>
+                            </li>
+                            <li>
+                              <a
+                                href="ad-single-premium.html"
+                                class="button icon-centered"
+                              >
+                                <i class="exp-icon-noun_430013_cc"></i>
+                              </a>
+                            </li>
+                          </ul>
+                        </div>
+                        <a href="#">
+                          <!-- AD ACTIONS end -->
+                          <div class="white_box single_ad__box has_actions">
+                            <div class="single_ad__thumb">
+                              <img
+                                class="img-responsive"
+                                src="/images/ad-image_05.jpg"
+                                alt=""
+                              />
+                            </div>
+                            <h4 class="single_ad__title">
+                              Mercedes-Benz Sprinter 2015
+                            </h4>
+                            <p class="single_ad__descr">
+                              ABS, Air Bag, Immobiliser, Remote Alarm, Remote
+                              Central Locking, Power Steering, Electric Windows,
+                              Trip Computer, Player, Height Adjustable Seat,
+                              Multi-function Steering Wheel, Retractable
+                              Headrests ...
+                            </p>
+                            <p class="single_ad__details clearfix">
+                              <span class="pull-left"
+                                ><i class="exp-icon-location"></i>Saudi Arabia,
+                                Eastern Province</span
+                              >
+                              <span class="pull-right"
+                                ><i class="exp-icon-time"></i>2 Hours Ago</span
+                              >
+                            </p>
+                          </div>
+                        </a>
+                        <button aria-pressed="false" class="in_favorites in">
+                          <i class="exp-icon-star-filled"></i>
+                        </button>
+                      </li>
+                    </ul>
+                    <!-- SINGLE AD ends -->
+                  </div>
+                  <div class="text-center">
+                    <ul class="pagination">
+                      <li class="active"><a href="../index.html">1</a></li>
+                      <li><a href="#">2</a></li>
+                      <li><a href="#">3</a></li>
+                      <li><a href="#">4</a></li>
+                      <li><a href="#">5</a></li>
+                      <li><a href="#">6</a></li>
+                      <li><a href="#">7</a></li>
+                      <li><a href="#">8</a></li>
+                      <li><a href="#">9</a></li>
+                      <li><a href="#">10</a></li>
+                      <li><a href="#">11</a></li>
+                      <li><a href="#">12</a></li>
+                      <li><span>&nbsp;...&nbsp;</span></li>
+                      <li><a href="#">250</a></li>
+                      <li><a href="#">Next</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- MY ADS end -->
+        </div>
+        <div
+          class="tab-pane my_profile_tabpanel fade"
+          role="tabpanel"
+          id="my_profile_tab"
+        >
+          <div class="page_section">
+            <div class="container-fluid">
+              <div class="row gutter-10">
+                <div class="col-md-12">
+                  <div class="white_box my_profile_box">
+                    <div class="row actions_row">
+                      <div class="col-md-12 text-right">
+                        <button
+                          class="btn btn-gray edit_my_profile_btn"
+                          data-toggle="modal"
+                          data-target="#editProfileModal"
+                        >
+                          Edit
+                        </button>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-md-6 col">
+                        <ul>
+                          <li class="media">
+                            <div class="media-left">
+                              <span class="profile_item__icon"
+                                ><i class="exp-icon-letter"></i
+                              ></span>
+                            </div>
+                            <div class="media-body media-middle">
+                              <div class="profile_item__cont">
+                                <h5 class="profile_item__title">Email</h5>
+                                <span class="profile_item__val">
+                                  thomasjames@yahoo.com
+                                </span>
+                              </div>
+                            </div>
+                          </li>
+                          <li class="media">
+                            <div class="media-left">
+                              <span class="profile_item__icon"
+                                ><i class="exp-icon-noun_150441_cc"></i
+                              ></span>
+                            </div>
+                            <div class="media-body media-middle">
+                              <div class="profile_item__cont">
+                                <h5 class="profile_item__title">
+                                  Contact Number
+                                </h5>
+                                <span class="profile_item__val">
+                                  (+44) 789 998 454
+                                </span>
+                              </div>
+                            </div>
+                          </li>
+                          <li class="media">
+                            <div class="media-left">
+                              <span class="profile_item__icon"
+                                ><i class="exp-icon-location"></i
+                              ></span>
+                            </div>
+                            <div class="media-body media-middle">
+                              <div class="profile_item__cont">
+                                <h5 class="profile_item__title">City</h5>
+                                <span class="profile_item__val">
+                                  Bucharest
+                                </span>
+                              </div>
+                            </div>
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="col-md-6 col">
+                        <ul>
+                          <li class="media">
+                            <div class="media-left">
+                              <span class="profile_item__icon"
+                                ><i class="exp-icon-noun_836566_cc"></i
+                              ></span>
+                            </div>
+                            <div class="media-body media-middle">
+                              <div class="profile_item__cont">
+                                <h5 class="profile_item__title">
+                                  Company Name
+                                </h5>
+                                <span class="profile_item__val">
+                                  Company Name
+                                </span>
+                              </div>
+                            </div>
+                          </li>
+                          <li class="media">
+                            <div class="media-left">
+                              <span class="profile_item__icon"
+                                ><i class="exp-icon-noun_927355_cc"></i
+                              ></span>
+                            </div>
+                            <div class="media-body media-middle">
+                              <div class="profile_item__cont">
+                                <h5 class="profile_item__title">
+                                  Preffered Language
+                                </h5>
+                                <span class="profile_item__val">
+                                  English
+                                </span>
+                              </div>
+                            </div>
+                          </li>
+                          <li class="media">
+                            <div class="media-left">
+                              <span class="profile_item__icon"
+                                ><i class="exp-icon-noun_887800_cc"></i
+                              ></span>
+                            </div>
+                            <div class="media-body media-middle">
+                              <div class="profile_item__cont">
+                                <h5 class="profile_item__title">
+                                  Profile Type
+                                </h5>
+                                <span class="profile_item__val">
+                                  Private
+                                </span>
+                              </div>
+                            </div>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- APP DOWNLOAD -->
+      <div class="page_section app_download">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-md-12">
+              <img
+                class="app_download__logo"
+                src="/images/app-logo_03.png"
+                alt="expatriates.com"
+              />
+              <p class="sans app_download__content">
+                Android mobile app is now available for testing. To try it,
+                please sign up <a href="#">here</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- APP DOWNLOAD ends -->
+    </div>
+    <!-- MAIN CONTENT end -->
+    <!-- FOOTER -->
+    <footer>
+      <div class="container-fluid">
+        <!-- FOOTER TOP -->
+        <div class="footer_top">
+          <div class="row">
+            <div class="col-md-9 footer_top__left">
+              <div class="row">
+                <div class="col-xs-6 col-sm-4 col-md-3">
+                  <div class="footer_col">
+                    <h4 class="footer_col__title">Platform</h4>
+                    <ul>
+                      <li><a href="#">Advertising</a></li>
+                      <li><a href="#">Terms of Use</a></li>
+                      <li><a href="#">Privacy</a></li>
+                      <li><a href="#">System Status</a></li>
+                      <li><a href="#">Unsubscribe</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col-xs-6 col-sm-4 col-md-3 text-xs-right">
+                  <div class="footer_col">
+                    <h4 class="footer_col__title">Support</h4>
+                    <ul>
+                      <li><a href="#">Contact support</a></li>
+                      <li><a href="#">Give feedback</a></li>
+                      <li><a href="#">Knowledge Base</a></li>
+                      <li><a href="#">All articles</a></li>
+                      <li><a href="#">FAQ</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col-xs-12 col-md-3 col-sm-4">
+                  <div class="footer_col">
+                    <h4 class="footer_col__title">Contact Us</h4>
+                    <ul>
+                      <li><a href="#">Post a new idea</a></li>
+                      <li><a href="#">All ideas</a></li>
+                      <li><a href="#">My feedback</a></li>
+                      <li><a href="#">General Feedback</a></li>
+                      <li><a href="#">Report Defect</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3 footer_top__right">
+              <div class="row hidden-xs hidden-sm">
+                <div class="col-xs-12">
+                  <a class="btn btn-block btn-primary" href="#"
+                    >Place a Free Ad</a
+                  >
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-xs-12">
+                  <div class="follow_place">
+                    <div class="row gutter-10 flex-row">
+                      <div class="col-xs-4 text-left">
+                        <p>Follow us</p>
+                      </div>
+                      <div class="col-xs-8 text-right">
+                        <ul class="social_ul">
+                          <li>
+                            <a href="#">
+                              <i class="exp-icon-facebook-logo"></i>
+                            </a>
+                          </li>
+                          <li>
+                            <a href="#">
+                              <i class="exp-icon-instagram-logo"></i>
+                            </a>
+                          </li>
+                          <li>
+                            <a href="#">
+                              <i class="exp-icon-twitter-logo"></i>
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- FOOTER TOP ends-->
+        <!-- FOOTER BOTTOM -->
+        <div class="footer_bottom">
+          <div class="row">
+            <div class="col-md-12">
+              <p class="footer_copy">
+                Copyright 2017 Expatriates.com | All rights reserved
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- FOOTER BOTTOM ends -->
+      </div>
+    </footer>
+    <!-- FOOTER ends -->
+    <!-- Modal -->
+    <div
+      class="modal fade edit_profile_modal"
+      id="editProfileModal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="editProfileModal"
+    >
+      <div class="modal-dialog" role="document">
+        <button
+          type="button"
+          class="close"
+          data-dismiss="modal"
+          aria-label="Close"
+        >
+          <i class="exp-icon-close"></i>
+        </button>
+        <div class="modal-content">
+          <div class="modal-body">
+            <form>
+              <div class="row change_profile__pic">
+                <div class="col-sm-12">
+                  <div class="form-group">
+                    <a href="#">
+                      <div class="media">
+                        <div class="media-left media-middle">
+                          <span class="usr_pic no_image"></span>
+                        </div>
+                        <div class="media-body media-middle">
+                          Change Profile Picture
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-6">
+                  <div class="form-group">
+                    <label for="inp1">First and Last Name</label>
+                    <input id="inp1" class="form-control" type="text" />
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="form-group">
+                    <label for="inp2">Company Name</label>
+                    <input id="inp2" class="form-control" type="text" />
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-6">
+                  <div class="form-group">
+                    <label for="inp3">Contact Number</label>
+                    <input id="inp3" class="form-control" type="text" />
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="form-group">
+                    <label for="inp4">Preffered Language</label>
+                    <input id="inp4" class="form-control" type="text" />
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-6">
+                  <div class="form-group">
+                    <label for="inp5">Email</label>
+                    <input id="inp5" class="form-control" type="text" />
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="form-group">
+                    <label>Profile Privacy</label>
+                    <div class="radio_rows">
+                      <div class="radio_row">
+                        <input
+                          type="radio"
+                          id="private"
+                          name="privacy"
+                          checked
+                        />
+                        <label for="private">Private</label>
+                      </div>
+                      <div class="radio_row">
+                        <input type="radio" id="professional" name="privacy" />
+                        <label for="professional">Professional</label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-6">
+                  <div class="form-group">
+                    <label for="city">City</label>
+                    <input id="city" class="form-control" type="text" />
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-xs-12">
+                  <hr />
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-12">
+                  <div class="form-group actions-group">
+                    <div class="row">
+                      <div class="col-sm-6">
+                        <button
+                          class="btn btn-block btn-gray btn-lg"
+                          data-dismiss="modal"
+                          aria-label="Close"
+                        >
+                          Discard
+                        </button>
+                      </div>
+                      <div class="col-sm-6">
+                        <button class="btn btn-block btn-primary btn-lg">
+                          Save Details
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Modal -->
+    <div
+      class="modal fade modal-prompt remove_ad_modal"
+      id="removeAd"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="removeAd"
+    >
+      <div class="modal-dialog modal-sm" role="document">
+        <div class="modal-content">
+          <button
+            type="button"
+            class="close"
+            data-dismiss="modal"
+            aria-label="Close"
+          >
+            <i class="exp-icon-close"></i>
+          </button>
+          <div class="modal-body text-center">
+            <div class="row">
+              <div class="col-xs-12 icon-col">
+                <i class="exp-icon-noun_40408_cc"></i>
+              </div>
+
+              <div class="col-xs-12">
+                <p class="font-weight-light">
+                  Are you sure you want to remove this Ad?
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <div class="row">
+              <div class="col-xs-6">
+                <button
+                  type="button"
+                  class="btn btn-lg btn-block btn-default"
+                  data-dismiss="modal"
+                >
+                  No
+                </button>
+              </div>
+              <div class="col-xs-6">
+                <button type="button" class="btn btn-lg btn-block btn-primary">
+                  Yes
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Modal -->
+    <div
+      class="modal fade modal-prompt modal-success activation_success_modal"
+      id="activationSuccess"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="activationSuccess"
+    >
+      <div class="modal-dialog modal-sm" role="document">
+        <div class="modal-content">
+          <div class="modal-body text-center">
+            <div class="row">
+              <div class="col-xs-12 icon-col">
+                <span class="img-circle icon-rounded icon-rounded-lg">
+                  <i class="exp-icon-noun_221757_cc"></i>
+                </span>
+              </div>
+
+              <div class="col-xs-12">
+                <p class="font-weight-light">
+                  Your ad has been activated. <br />
+                  Thank you!
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- build:js({.tmp/app,.tmp/partials,src}) scripts/app.js -->
+    <!-- bower:js -->
+    <!-- run `gulp inject` to automatically populate bower script dependencies -->
+    <!-- endbower -->
+    <!-- inject:plugin:js -->
+    <!-- plugin js files will be automatically insert here -->
+    <!-- endinject -->
+    <!-- inject:js -->
+    <!-- js files will be automatically insert here -->
+    <!-- endinject -->
+    <!-- endbuild -->
+  </body>
+</html>
