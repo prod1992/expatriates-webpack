@@ -161,10 +161,24 @@ const config = function (env, args) {
             new HtmlWebpackPlugin({
                 inject: true,
                 hash: false,
-                filename: "ad-place.html",
-                template: path.resolve(__dirname, "src", "pages", "ad-place.html"),
+                filename: "create_ad-page.html",
+                template: path.resolve(__dirname, "src", "pages", "create_ad-page.html"),
                 favicon: path.resolve(__dirname, "src", "images", "favicon.ico")
             }),
+            new HtmlWebpackPlugin({
+                inject: true,
+                hash: false,
+                filename: "create_ad-page2.html",
+                template: path.resolve(__dirname, "src", "pages", "create_ad-page2.html"),
+                favicon: path.resolve(__dirname, "src", "images", "favicon.ico")
+            }), new HtmlWebpackPlugin({
+                inject: true,
+                hash: false,
+                filename: "create_ad-page3.html",
+                template: path.resolve(__dirname, "src", "pages", "create_ad-page3.html"),
+                favicon: path.resolve(__dirname, "src", "images", "favicon.ico")
+            }),
+
             new MiniCssExtractPlugin({
                 filename: "css/[name].css"
             }),
