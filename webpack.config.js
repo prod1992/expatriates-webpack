@@ -206,13 +206,6 @@ const config = function(env, args) {
         ),
         favicon: path.resolve(__dirname, "src", "images", "favicon.ico")
       }),
-      new HtmlWebpackPlugin({
-        inject: true,
-        hash: false,
-        filename: "ad-place-sub.html",
-        template: path.resolve(__dirname, "src", "pages", "ad-place-sub.html"),
-        favicon: path.resolve(__dirname, "src", "images", "favicon.ico")
-      }),
       new MiniCssExtractPlugin({
         filename: "css/[name].css"
       }),
