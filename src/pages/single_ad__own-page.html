@@ -1,0 +1,752 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="ISO-8859-15" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Premium / Expatriates</title>
+  </head>
+
+  <body>
+    <!-- MAIN HEADER -->
+    <header class="main-header clearfix">
+      <!-- Overlay -->
+      <div class="dark-overlay"></div>
+      <div class="container-fluid">
+        <a href="/" class="menu_toggler">
+          <span class="line top"></span>
+          <span class="line mid"></span>
+          <span class="line bot"></span>
+        </a>
+        <h2 class="logo">
+          <a href="/">
+            <span class="logo_icon"> </span>
+            <span class="logo_top">expatriates.com</span>
+            <span class="logo_bot">The online community for expatriates</span>
+          </a>
+        </h2>
+        <nav id="menu" class="main-nav desktop-nav">
+          <ul>
+            <li class="logo-in-nav">
+              <h2 class="logo">
+                <a href="/">
+                  <span class="logo_icon"> </span>
+                  <span class="logo_top">expatriates.com</span>
+                  <span class="logo_bot"
+                    >The online community for expatriates</span
+                  >
+                </a>
+              </h2>
+            </li>
+            <li>
+              <a href="/"><i class="nav_icon exp-icon-home"></i>Home</a>
+            </li>
+            <li>
+              <a href="/scripts/posting/subscribe.epl">
+                <i class="nav_icon exp-icon-letter"></i> Subscribe
+              </a>
+            </li>
+            <li>
+              <a href="/html/contactus.html"
+                ><i class="nav_icon exp-icon-letter"></i>Contact Us</a
+              >
+            </li>
+            <li>
+              <a href="#"><i class="nav_icon icon-signin"></i>Sign In</a>
+            </li>
+            <!-- <li>
+                        <a href="#"><i class="nav_icon icon-myprofile"></i>My Profile</a>
+                </li>
+                <li>
+                        <a href="#"><i class="nav_icon icon-signout"></i>Sign Out</a>
+                </li> -->
+            <li class="btn_li">
+              <a
+                href="/cgi-local/placead/index.pl"
+                class="btn btn-primary btn-block btn-with-icon icon-on-left"
+                ><i class="exp-icon-plus_rounded"></i>Place an Ad</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <!-- MAIN HEADER ends -->
+    <!-- MAIN CONTENT start -->
+    <div class="main_content">
+      <!-- BREADCRUMB -->
+      <div class="exp_breadcrumb bg-white">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-md-12">
+              <ul class="breadcrumb">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">International</a></li>
+                <li><a href="#">Saudi Arabia</a></li>
+                <li><a href="#">Eastern Province</a></li>
+                <li><a href="#">Items For Sale</a></li>
+                <li class="active"><a href="#">Auto Parts</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- BREADCRUMB ends -->
+      <!-- SEARCH PAGE -->
+      <div class="page_section bg-darker">
+        <div class="own_ad">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-md-12">
+                <!--REMOVE 'is-active' class to show button-->
+                <div class="single_ad is-active">
+                  <div class="single_ad__actions">
+                    <ul>
+                      <li>
+                        <button class="button icon-centered">
+                          <i class="exp-icon-noun_899585_cc"></i>
+                        </button>
+                      </li>
+                      <li>
+                        <button
+                          class="button icon-centered"
+                          data-toggle="modal"
+                          data-target="#removeAd"
+                        >
+                          <i class="exp-icon-noun_40408_cc"></i>
+                        </button>
+                      </li>
+                      <li>
+                        <button class="button icon-centered">
+                          <i class="exp-icon-noun_430013_cc"></i>
+                        </button>
+                      </li>
+                    </ul>
+                    <div class="single_ad__status pull-right visible-xs">
+                      <button
+                        data-toggle="modal"
+                        data-target="#activationSuccess"
+                        class="btn btn-primary btn-block"
+                      >
+                        Activate
+                      </button>
+                      <span class="badge">Active</span>
+                    </div>
+                  </div>
+
+                  <div class="white_box">
+                    <div class="row">
+                      <div class="col-sm-6 col-md-4 slider_column">
+                        <div class="slider-wrapper is-loading">
+                          <!-- SINGLE AD SLIDER -->
+                          <div class="owl-carousel single_ad__slider">
+                            <div class="one_slide">
+                              <a
+                                href="#"
+                                data-toggle="modal"
+                                data-target="#adsSliderModal"
+                              >
+                                <div class="img_wrapper">
+                                  <img
+                                    class="img-responsive"
+                                    src="/images/car.jpg"
+                                    alt=""
+                                  />
+                                </div>
+                              </a>
+                            </div>
+                            <div class="one_slide">
+                              <a
+                                href="#"
+                                data-toggle="modal"
+                                data-target="#adsSliderModal"
+                              >
+                                <div class="img_wrapper">
+                                  <img
+                                    class="img-responsive"
+                                    src="/images/car1.jpg"
+                                    alt=""
+                                  />
+                                </div>
+                              </a>
+                            </div>
+                            <div class="one_slide">
+                              <a
+                                href="#"
+                                data-toggle="modal"
+                                data-target="#adsSliderModal"
+                              >
+                                <div class="img_wrapper">
+                                  <img
+                                    class="img-responsive"
+                                    src="/images/car2.jpg"
+                                    alt=""
+                                  />
+                                </div>
+                              </a>
+                            </div>
+                            <div class="one_slide">
+                              <a
+                                href="#"
+                                data-toggle="modal"
+                                data-target="#adsSliderModal"
+                              >
+                                <div class="img_wrapper">
+                                  <img
+                                    class="img-responsive"
+                                    src="/images/car3.jpg"
+                                    alt=""
+                                  />
+                                </div>
+                              </a>
+                            </div>
+                          </div>
+                          <!-- SINGLE AD SLIDER ends -->
+                          <!-- SINGLE AD POPUP SLIDER -->
+                          <div
+                            class="modal fade ads_slider_modal"
+                            id="adsSliderModal"
+                            tabindex="-1"
+                            role="dialog"
+                            aria-labelledby="adsSliderModal"
+                          >
+                            <div class="modal-dialog" role="document">
+                              <button
+                                type="button"
+                                class="close"
+                                data-dismiss="modal"
+                                aria-label="Close"
+                              >
+                                <i class="exp-icon-close"></i>
+                              </button>
+                              <div class="modal-content">
+                                <div class="modal-body">
+                                  <!-- SLIDER SELF start -->
+                                  <div class="slider_self owl-carousel">
+                                    <div class="one_slide">
+                                      <div class="img_wrapper">
+                                        <img
+                                          class="img-responsiv alt=e"
+                                          src="/images/car.jpg"
+                                          alt=""
+                                        />
+                                      </div>
+                                    </div>
+                                    <div class="one_slide">
+                                      <div class="img_wrapper">
+                                        <img
+                                          class="img-responsiv alt=e"
+                                          src="/images/car1.jpg"
+                                          alt=""
+                                        />
+                                      </div>
+                                    </div>
+                                    <div class="one_slide">
+                                      <div class="img_wrapper">
+                                        <img
+                                          class="img-responsiv alt=e"
+                                          src="/images/car2.jpg"
+                                          alt=""
+                                        />
+                                      </div>
+                                    </div>
+                                    <div class="one_slide">
+                                      <div class="img_wrapper">
+                                        <img
+                                          class="img-responsiv alt=e"
+                                          src="/images/car3.jpg"
+                                          alt=""
+                                        />
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <!-- SLIDER SELF end -->
+                                </div>
+                                <div class="modal-footer">
+                                  <!-- AUTHOR INFO starts -->
+                                  <div class="author_info">
+                                    <div class="row flex-row flex-wrap">
+                                      <div class="col author_col">
+                                        <span class="usr_pic no_image"></span
+                                        ><span class="author_name"
+                                          ><strong>Thomas James</strong></span
+                                        >
+                                      </div>
+                                      <div
+                                        class="col actions_col text-right flex-grow"
+                                      >
+                                        <div class="row flex-row">
+                                          <div class="col">
+                                            <a
+                                              href="#"
+                                              class="btn btn-block btn-primary-gradient2 btn-with-icon icon-on-left"
+                                              ><i class="exp-icon-letter"></i
+                                              >thomasjames@yahoo.com</a
+                                            >
+                                          </div>
+                                          <div class="col">
+                                            <a
+                                              href="#"
+                                              class="btn btn-block btn-primary-gradient btn-with-icon icon-on-left"
+                                              ><i class="exp-icon-phone"></i
+                                              >07044 360 269</a
+                                            >
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <!-- AUTHOR INFO ends -->
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <!-- SINGLE AD POPUP SLIDER end -->
+                        </div>
+                      </div>
+                      <div class="col-xs-12 col-sm-6 col-md-8 right_column">
+                        <div class="single_ad__status hidden-xs">
+                          <button
+                            class="btn btn-primary"
+                            data-toggle="modal"
+                            data-target="#activationSuccess"
+                          >
+                            Activate
+                          </button>
+                          <span class="badge">Active</span>
+                        </div>
+
+                        <h4 class="single_ad__title">
+                          Mercedes-Benz Sprinter 2015
+                        </h4>
+                        <div class="single_ad__details">
+                          <p>
+                            <span
+                              ><i class="exp-icon-location"></i>Saudi Arabia,
+                              Eastern Province</span
+                            >
+                          </p>
+                          <p>
+                            <span><i class="exp-icon-time"></i>1 Day Ago</span>
+                          </p>
+                        </div>
+                        <!-- ONE AD DESCRIPTION -->
+                        <div class="single_ad__descr">
+                          <p>
+                            Date of Registration: 2013 (13) <br />
+                            Mileage since new: 47,180 <br />
+                            The exterior colour: WHITE <br />
+                            Registration date: 2013-03-01 <br />
+                            Heated mirrors, Alloys, Electro-mechanical PAS, Low
+                            washer fluid indicator, Mobile telephone
+                            preparation, Service interval indicator, Voice
+                            control system, Audi music interface, Body colour
+                            bumpers, Body colour door mirrors with integral
+                            indicators, Body colour roof spoiler, Electric front
+                            windows, Front fog lights, Heated rear window,
+                            Heated windscreen washer jets.
+                            <br />
+                            <br />
+                            Rear wiper, 3 adjustable rear headrests, 4 lashing
+                            points to secure luggage, 4 spoke leather
+                            multi-function steering wheel,60/40 split folding
+                            rear seat, Adjustable front armrest, Coat hooks on
+                            both sides, Driver sunvisors, Front and rear
+                            interior lights with delay.
+                          </p>
+                        </div>
+                        <!-- ONE AD DESCRIPTION ends -->
+                        <!-- AUTHOR INFO starts -->
+                        <div class="author_info">
+                          <div class="row flex-row flex-wrap">
+                            <div class="col author_col">
+                              <span class="usr_pic no_image"></span
+                              ><span class="author_name"
+                                ><strong>Thomas James</strong></span
+                              >
+                            </div>
+                            <div class="col actions_col text-right flex-grow">
+                              <div class="row flex-row">
+                                <div class="col">
+                                  <a
+                                    href="#"
+                                    class="btn btn-block btn-primary-gradient2 btn-with-icon icon-on-left"
+                                    ><i class="exp-icon-letter"></i
+                                    >thomasjames@yahoo.com</a
+                                  >
+                                </div>
+                                <div class="col">
+                                  <a
+                                    href="#"
+                                    class="btn btn-block btn-primary-gradient btn-with-icon icon-on-left"
+                                    ><i class="exp-icon-phone"></i>07044 360
+                                    269</a
+                                  >
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- AUTHOR INFO ends -->
+                        <!-- POSTING INFO starts-->
+                        <div class="single_ad__info">
+                          <div class="row flex-row">
+                            <div class="col">
+                              <ul class="info_ul">
+                                <li>
+                                  <i class="exp-icon-noun_428398_cc"></i>Posting
+                                  ID: <a href="#">33256445</a>
+                                </li>
+                                <li>
+                                  Creation Date:
+                                  <span class="text-info"
+                                    >Monday, April 03, 2017</span
+                                  >
+                                </li>
+                                <li>
+                                  Publish Date:
+                                  <span class="text-info"
+                                    >Monday, April 03, 2017</span
+                                  >
+                                </li>
+                                <li>
+                                  Expiration Date:
+                                  <span class="text-info"
+                                    >Monday, April 03, 2017</span
+                                  >
+                                </li>
+                                <li>
+                                  Status: <span class="text-info">Active</span>
+                                </li>
+                              </ul>
+                            </div>
+                            <div class="col flex-grow text-right">
+                              <ul class="single_ad__social">
+                                <li class="text_li">Share</li>
+                                <li>
+                                  <a class="fb_bg" href="#"
+                                    ><i class="exp-icon-facebook-logo"></i
+                                  ></a>
+                                </li>
+                                <li>
+                                  <a class="tw_bg" href="#"
+                                    ><i class="exp-icon-twitter-logo"></i
+                                  ></a>
+                                </li>
+                                <li>
+                                  <a class="in_bg" href="#"
+                                    ><i class="exp-icon-instagram-logo"></i
+                                  ></a>
+                                </li>
+                                <li>
+                                  <a class="msg_bg" href="#"
+                                    ><i class="exp-icon-letter"></i
+                                  ></a>
+                                </li>
+                                <li>
+                                  <a class="pint_bg" href="#"
+                                    ><i class="exp-icon-pinterest-logo"></i
+                                  ></a>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- POSTING INFO ends-->
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-12">
+                <div class="single_ad__controls">
+                  <a class="btn btn-default btn-with-icon icon-on-left"
+                    ><i class="exp-icon-noun_756312_cc2"></i>Previous Ad
+                  </a>
+                  <a
+                    class="btn btn-primary-gradient2 btn-with-icon icon-on-right"
+                    ><i class="exp-icon-noun_756312_cc"></i>Next Ad
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- SEARCH PAGE ends -->
+      <!-- APP DOWNLOAD -->
+      <div class="page_section app_download">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-md-12">
+              <img
+                class="app_download__logo"
+                src="/images/app-logo_03.png"
+                alt=""
+              />
+              <p class="sans app_download__content">
+                Android mobile app is now available for testing. To try it,
+                please sign up <a href="#">here</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- APP DOWNLOAD ends -->
+    </div>
+    <!-- MAIN CONTENT end -->
+    <!-- FOOTER -->
+    <footer>
+      <div class="container-fluid">
+        <!-- FOOTER TOP -->
+        <div class="footer_top">
+          <div class="row">
+            <div class="col-md-9 footer_top__left">
+              <div class="row">
+                <div class="col-xs-6 col-sm-4 col-md-3">
+                  <div class="footer_col">
+                    <h4 class="footer_col__title">Platform</h4>
+                    <ul>
+                      <li><a href="#">Advertising</a></li>
+                      <li><a href="#">Terms of Use</a></li>
+                      <li><a href="#">Privacy</a></li>
+                      <li><a href="#">System Status</a></li>
+                      <li><a href="#">Unsubscribe</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col-xs-6 col-sm-4 col-md-3 text-xs-right">
+                  <div class="footer_col">
+                    <h4 class="footer_col__title">Support</h4>
+                    <ul>
+                      <li><a href="#">Contact support</a></li>
+                      <li><a href="#">Give feedback</a></li>
+                      <li><a href="#">Knowledge Base</a></li>
+                      <li><a href="#">All articles</a></li>
+                      <li><a href="#">FAQ</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col-xs-12 col-md-3 col-sm-4">
+                  <div class="footer_col">
+                    <h4 class="footer_col__title">Contact Us</h4>
+                    <ul>
+                      <li><a href="#">Post a new idea</a></li>
+                      <li><a href="#">All ideas</a></li>
+                      <li><a href="#">My feedback</a></li>
+                      <li><a href="#">General Feedback</a></li>
+                      <li><a href="#">Report Defect</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3 footer_top__right">
+              <div class="row hidden-xs hidden-sm">
+                <div class="col-xs-12">
+                  <a class="btn btn-block btn-primary" href="#"
+                    >Place a Free Ad</a
+                  >
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-xs-12">
+                  <div class="follow_place">
+                    <div class="row gutter-10 flex-row">
+                      <div class="col-xs-4 text-left">
+                        <p>Follow us</p>
+                      </div>
+                      <div class="col-xs-8 text-right">
+                        <ul class="social_ul">
+                          <li>
+                            <a href="#">
+                              <i class="exp-icon-facebook-logo"></i>
+                            </a>
+                          </li>
+                          <li>
+                            <a href="#">
+                              <i class="exp-icon-instagram-logo"></i>
+                            </a>
+                          </li>
+                          <li>
+                            <a href="#">
+                              <i class="exp-icon-twitter-logo"></i>
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- FOOTER TOP ends-->
+        <!-- FOOTER BOTTOM -->
+        <div class="footer_bottom">
+          <div class="row">
+            <div class="col-md-12">
+              <p class="footer_copy">
+                Copyright 2017 Expatriates.com | All rights reserved
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- FOOTER BOTTOM ends -->
+      </div>
+    </footer>
+    <!-- FOOTER ends -->
+    <!--Modal -->
+    <div
+      class="modal modal-prompt remove_ad_modal fade"
+      id="removeAd"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="removeAd"
+    >
+      <div class="modal-dialog modal-sm" role="document">
+        <div class="modal-content">
+          <button
+            type="button"
+            class="close"
+            data-dismiss="modal"
+            aria-label="Close"
+          >
+            <i class="exp-icon-close"></i>
+          </button>
+          <div class="modal-body text-center">
+            <div class="row">
+              <div class="col-xs-12 icon-col">
+                <i class="exp-icon-noun_40408_cc"></i>
+              </div>
+
+              <div class="col-xs-12">
+                <p class="font-weight-light">
+                  Are you sure you want to remove this Ad?
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <div class="row">
+              <div class="col-xs-6">
+                <button
+                  type="button"
+                  class="btn btn-lg btn-block btn-default"
+                  data-dismiss="modal"
+                >
+                  No
+                </button>
+              </div>
+              <div class="col-xs-6">
+                <button type="button" class="btn btn-lg btn-block btn-primary">
+                  Yes
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--Modal -->
+    <div
+      class="modal modal-prompt modal-success activation_success_modal fade"
+      id="activationSuccess"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="activationSuccess"
+    >
+      <div class="modal-dialog modal-sm" role="document">
+        <div class="modal-content">
+          <div class="modal-body text-center">
+            <div class="row">
+              <div class="col-xs-12 icon-col">
+                <span class="img-circle icon-rounded icon-rounded-lg">
+                  <i class="exp-icon-noun_221757_cc"></i>
+                </span>
+              </div>
+
+              <div class="col-xs-12">
+                <p class="font-weight-light">
+                  Your ad has been activated. <br />
+                  Thank you!
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Button trigger modal -->
+    <!--<button type="button" class="btn btn-primary btn-lg" data-toggle="modal"-->
+    <!--data-target="#premiumModal">-->
+    <!--Premium Modal-->
+    <!--</button>-->
+    <!-- Modal -->
+    <!--<div class="modal modal-premium-ad fade" id="premiumModal" tabindex="-1" role="dialog"-->
+    <!--aria-labelledby="premiumModalLabel">-->
+    <!--<div class="modal-dialog modal-lg" role="document">-->
+    <!--<div class="modal-content">-->
+    <!--<div class="modal-header">-->
+    <!--<button type="button" class="close" data-dismiss="modal" aria-label="Close"><i-->
+    <!--class="exp-icon-close"></i></button>-->
+    <!--<div class="row">-->
+    <!--<div class="col-sm-6">-->
+    <!--<h3 class="modal-title" id="premiumModalLabel"><span class="icon-rounded"><i-->
+    <!--class="exp-icon-noun_430013_cc"></i></span>Premium Ad</h3>-->
+    <!--</div>-->
+    <!--<div class="col-sm-6">-->
+    <!--</div>-->
+    <!--</div>-->
+    <!--</div>-->
+    <!--<div class="modal-body">-->
+    <!--<h5 class="form-heading">Premium ads appear at the top of the list for up to 180 days</h5>-->
+    <!--<form name="activatePremium">-->
+    <!--<div class="row">-->
+    <!--<div class="col-sm-6">-->
+    <!--<div class="form-group required">-->
+    <!--<label for="pAmmount"><span>Payment amount</span></label>-->
+    <!--<select name="pAmmount" id="pAmmount" class="form-control" style="width: 100%;">-->
+    <!--<option value="10">$10.00</option>-->
+    <!--<option value="25">$25.00</option>-->
+    <!--<option value="50">$50.00</option>-->
+    <!--</select>-->
+    <!--</div>-->
+    <!--<div class="form-group required">-->
+    <!--<label for="dNumber"><span>Number of days</span><span class="help-block">Please enter the number of days to publish your ad. <br/>-->
+    <!--Do not enter decimal values</span></label>-->
+    <!--<input id="dNumber" name="dNumber" type="text" class="form-control" value="10"/>-->
+    <!--</div>-->
+    <!--</div>-->
+    <!--<div class="col-sm-6">-->
+    <!--<div class="form-group">-->
+    <!--<div>-->
+    <!--<h5 class="form-heading">Daily  rate: $10</h5>-->
+    <!--<p>The higher the daily rate the higher the Ad-->
+    <!--will appear on the list-->
+    <!--</p>-->
+    <!--</div>-->
+    <!--</div>-->
+    <!--</div>-->
+    <!--</div>-->
+    <!--</form>-->
+    <!--</div>-->
+    <!--<div class="modal-footer">-->
+    <!--<div class="row">-->
+    <!--<div class="col-sm-6">-->
+    <!--<button type="button" class="btn btn-lg btn-block btn-default" data-dismiss="modal">Cancel-->
+    <!--</button>-->
+    <!--</div>-->
+    <!--<div class="col-sm-6">-->
+    <!--<button type="button" class="btn btn-lg btn-block btn-primary">Buy Now</button>-->
+    <!--</div>-->
+    <!--</div>-->
+    <!--</div>-->
+    <!--</div>-->
+    <!--</div>-->
+    <!--</div>-->
+    <!-- FOOTER ends -->
+  </body>
+</html>

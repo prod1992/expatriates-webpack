@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="ISO-8859-15" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Premium / Expatriates</title>
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <!-- build:css({.tmp/app,src}) styles/style3.0.css -->
+    <!-- bower:css -->
+    <!-- run `gulp inject` to automatically populate bower styles dependencies -->
+    <!-- endbower -->
+    <!-- inject:css -->
+    <!-- css files will be automatically insert here -->
+    <!-- endinject -->
+    <!-- endbuild -->
+  </head>
+
+  <body>
+    <!-- MAIN HEADER -->
+    <header class="main-header clearfix">
+      <!-- Overlay -->
+      <div class="dark-overlay"></div>
+      <div class="container-fluid">
+        <a href="/" class="menu_toggler">
+          <span class="line top"></span>
+          <span class="line mid"></span>
+          <span class="line bot"></span>
+        </a>
+        <h2 class="logo">
+          <a href="/">
+            <span class="logo_icon"> </span>
+            <span class="logo_top">expatriates.com</span>
+            <span class="logo_bot">The online community for expatriates</span>
+          </a>
+        </h2>
+        <nav id="menu" class="main-nav desktop-nav">
+          <ul>
+            <li class="logo-in-nav">
+              <h2 class="logo">
+                <a href="/">
+                  <span class="logo_icon"> </span>
+                  <span class="logo_top">expatriates.com</span>
+                  <span class="logo_bot"
+                    >The online community for expatriates</span
+                  >
+                </a>
+              </h2>
+            </li>
+            <li>
+              <a href="/"><i class="nav_icon exp-icon-home"></i>Home</a>
+            </li>
+            <li>
+              <a href="/scripts/posting/subscribe.epl">
+                <i class="nav_icon exp-icon-letter"></i> Subscribe
+              </a>
+            </li>
+            <li>
+              <a href="/html/contactus.html"
+                ><i class="nav_icon exp-icon-letter"></i>Contact Us</a
+              >
+            </li>
+            <li>
+              <a href="#"><i class="nav_icon icon-signin"></i>Sign In</a>
+            </li>
+            <!-- <li>
+                        <a href="#"><i class="nav_icon icon-myprofile"></i>My Profile</a>
+                </li>
+                <li>
+                        <a href="#"><i class="nav_icon icon-signout"></i>Sign Out</a>
+                </li> -->
+            <li class="btn_li">
+              <a
+                href="/cgi-local/placead/index.pl"
+                class="btn btn-primary btn-block btn-with-icon icon-on-left"
+                ><i class="exp-icon-plus_rounded"></i>Place an Ad</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <!-- MAIN HEADER ends -->
+    <!-- MAIN CONTENT start -->
+    <div class="main_content bg-darker modify-ad has-fixed-actions">
+      <!-- PAGE HEADER -->
+      <div class="page_header">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-xs-12">
+              <h3 class="page_header__title">
+                <span
+                  class="img-circle bg-primary icon-rounded icon-rounded-small"
+                >
+                  <i class="exp-icon-noun_899585_cc"></i>
+                </span>
+                Modify Ad
+              </h3>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- PAGE HEADER end -->
+
+      <div class="page_section">
+        <div class="container-fluid">
+          <div class="white_box">
+            <div class="box_header">
+              <div class="row">
+                <div class="col-xs-12">
+                  <a class="back_btn" href="#"
+                    >Back<i class="exp-icon-left"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+            <div class="box_content">
+              <div class="row">
+                <div class="col-xs-12">
+                  <div class="box_content__inner">
+                    <form name="activatePremium">
+                      <div class="row">
+                        <div class="col-sm-12">
+                          <div class="form-group required">
+                            <label for="pTitle">Posting title</label>
+                            <p class="help-block">
+                              Please briefly describe the ad. Do not use all
+                              capital letters.
+                            </p>
+                            <input
+                              class="form-control"
+                              name="pTitle"
+                              id="pTitle"
+                            />
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-sm-12">
+                          <div class="form-group">
+                            <label for="pDescription">Description</label>
+                            <p class="help-block">
+                              Please provide a more detailed description of the
+                              ad here. Do not use all capital letters.
+                            </p>
+                            <textarea
+                              class="form-control"
+                              name="pDescription"
+                              id="pDescription"
+                              rows="8"
+                              cols="30"
+                            >
+Date of Registration: 2013 (13) &#10;Mileage since new: 47,180 &#10;The exterior colour: WHITE &#10;Registration date: 2013-03-01 &#10;Heated mirrors, Alloys, Electro-mechanical PAS, Low washer fluid indicator, Mobile telephone preparation, Service interval indicator, Voice control system, Audi music interface, Body colour bumpers, Body colour door mirrors with integral indicators, Body color...</textarea
+                            >
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-sm-6">
+                          <div class="form-group">
+                            <label for="pPrice">Price</label>
+                            <input
+                              class="form-control"
+                              type="text"
+                              id="pPrice"
+                              name="pPrice"
+                            />
+                          </div>
+                        </div>
+                        <div class="col-sm-6">
+                          <div class="form-group">
+                            <label for="pCurrency">Currency</label>
+                            <select
+                              class="form-control"
+                              name="pCurrency"
+                              id="pCurrency"
+                              style="width: 100%;"
+                            >
+                              <option value="eur">EUR</option>
+                              <option value="usd">USD</option>
+                              <option value="amd">AMD</option>
+                              <option value="rub">RUB</option>
+                            </select>
+                          </div>
+                        </div>
+                      </div>
+                      <!--<div class="row">-->
+                      <!--<div class="col-sm-6">-->
+                      <!--<div class="form-group">-->
+                      <!--<label for="pCategory">Category</label>-->
+                      <!--<select class="form-control" name="pCategory" id="pCategory"-->
+                      <!--style="width: 100%;">-->
+                      <!--<option value="0">Vehicules</option>-->
+                      <!--<option value="1">Vehicules</option>-->
+                      <!--<option value="2">Vehicules</option>-->
+                      <!--<option value="3">Vehicules</option>-->
+                      <!--</select>-->
+                      <!--</div>-->
+                      <!--</div>-->
+                      <!--<div class="col-sm-6">-->
+                      <!--<div class="form-group">-->
+                      <!--<label for="pRegion">Region</label>-->
+                      <!--<input class="form-control" type="text" id="pRegion"-->
+                      <!--name="pRegion"/>-->
+                      <!--</div>-->
+                      <!--</div>-->
+                      <!--</div>-->
+                      <div class="row imgs_upload">
+                        <div class="col-xs-12">
+                          <hr />
+                        </div>
+                        <div class="col-sm-12">
+                          <div class="form-group">
+                            <label for="adPictures"
+                              >Upload Pictures (up to 8)</label
+                            >
+                            <p class="help-block">
+                              Please limit each file to a maximize size of 100K
+                              bytes
+                            </p>
+                            <ul
+                              id="adPictures"
+                              class="ad_pictures columns-sm-3"
+                            >
+                              <li>
+                                <a href="#">
+                                  <div
+                                    class="image_uploaded"
+                                    style="background-image: url(/images/car1.jpg);"
+                                  ></div>
+                                </a>
+                                <button
+                                  type="button"
+                                  class="remove_btn"
+                                  data-toggle="modal"
+                                  data-target="#removeAd"
+                                  data-unit="picture"
+                                >
+                                  <i class="exp-icon-noun_40408_cc"></i>
+                                </button>
+                              </li>
+                              <li>
+                                <a href="#">
+                                  <div
+                                    class="image_uploaded"
+                                    style="background-image: url(/images/car1.jpg);"
+                                  ></div>
+                                </a>
+                                <button
+                                  type="button"
+                                  class="remove_btn"
+                                  data-toggle="modal"
+                                  data-target="#removeAd"
+                                  data-unit="picture"
+                                >
+                                  <i class="exp-icon-noun_40408_cc"></i>
+                                </button>
+                              </li>
+                              <li>
+                                <a href="#">
+                                  <div
+                                    class="image_uploaded"
+                                    style="background-image: url(/images/car1.jpg);"
+                                  ></div>
+                                </a>
+                                <button
+                                  type="button"
+                                  class="remove_btn"
+                                  data-toggle="modal"
+                                  data-target="#removeAd"
+                                  data-unit="picture"
+                                >
+                                  <i class="exp-icon-noun_40408_cc"></i>
+                                </button>
+                              </li>
+                              <li>
+                                <a href="#">
+                                  <div
+                                    class="image_uploaded"
+                                    style="background-image: url(/images/car1.jpg);"
+                                  ></div>
+                                </a>
+                                <button
+                                  type="button"
+                                  class="remove_btn"
+                                  data-toggle="modal"
+                                  data-target="#removeAd"
+                                  data-unit="picture"
+                                >
+                                  <i class="exp-icon-noun_40408_cc"></i>
+                                </button>
+                              </li>
+                              <li>
+                                <a href="#">
+                                  <div
+                                    class="image_uploaded"
+                                    style="background-image: url(/images/car1.jpg);"
+                                  ></div>
+                                </a>
+                                <button
+                                  type="button"
+                                  class="remove_btn"
+                                  data-toggle="modal"
+                                  data-target="#removeAd"
+                                  data-unit="picture"
+                                >
+                                  <i class="exp-icon-noun_40408_cc"></i>
+                                </button>
+                              </li>
+                              <li>
+                                <label class="no_image">
+                                  <input type="file" />
+                                  <span class="centered">
+                                    <span>
+                                      <i class="exp-icon-noun_752662_cc"></i>
+                                    </span>
+                                    <span>Add New Picture</span>
+                                  </span>
+                                </label>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                        <div class="col-xs-12">
+                          <hr />
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-sm-12">
+                          <div class="form-group">
+                            <label for="contactNumber">Contact Number</label>
+                            <p class="help-block">
+                              Please provide a contact phone number to be
+                              displayed in your published ad
+                            </p>
+                            <input
+                              class="form-control"
+                              type="text"
+                              id="contactNumber"
+                              name="contactNumber"
+                            />
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-sm-12">
+                          <div class="form-group required">
+                            <label for="emailAddress">E-mail Address</label>
+                            <input
+                              type="text"
+                              class="form-control"
+                              id="emailAddress"
+                              name="emailAddress"
+                            />
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-sm-12">
+                          <div class="form-group">
+                            <label>Email Privacy</label>
+                            <p class="help-block">
+                              Please indicate whether the email specified above
+                              should be displayed in your published ad.
+                            </p>
+                            <div class="radio_rows">
+                              <div class="radio_row">
+                                <input
+                                  type="radio"
+                                  id="not_display"
+                                  name="email_privacy"
+                                  checked=""
+                                />
+                                <label for="not_display"
+                                  >Display My Email Address</label
+                                >
+                              </div>
+                              <div class="radio_row">
+                                <input
+                                  type="radio"
+                                  id="display"
+                                  name="email_privacy"
+                                />
+                                <label for="display"
+                                  >Do Not Display E-mail My Address<span
+                                    class="help-block"
+                                    >Be sure to provide a phone number or other
+                                    contact information in the description</span
+                                  ></label
+                                >
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-xs-12">
+                          <div class="form-group fixed-actions">
+                            <div class="container-fluid">
+                              <div class="row">
+                                <div class="col-xs-12 col-sm-6 col-sm-offset-6">
+                                  <div class="row">
+                                    <div class="col-xs-6 left_col">
+                                      <button
+                                        type="button"
+                                        class="btn btn-lg btn-block btn-default"
+                                        data-dismiss="modal"
+                                      >
+                                        Discard
+                                      </button>
+                                    </div>
+                                    <div class="col-xs-6 right_col">
+                                      <button
+                                        type="button"
+                                        class="btn btn-lg btn-block btn-primary"
+                                      >
+                                        Modify
+                                      </button>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- MAIN CONTENT end -->
+    </div>
+    <!-- FOOTER -->
+    <footer>
+      <div class="container-fluid">
+        <!-- FOOTER TOP -->
+        <div class="footer_top">
+          <div class="row">
+            <div class="col-md-9 footer_top__left">
+              <div class="row">
+                <div class="col-xs-6 col-sm-4 col-md-3">
+                  <div class="footer_col">
+                    <h4 class="footer_col__title">Platform</h4>
+                    <ul>
+                      <li><a href="#">Advertising</a></li>
+                      <li><a href="#">Terms of Use</a></li>
+                      <li><a href="#">Privacy</a></li>
+                      <li><a href="#">System Status</a></li>
+                      <li><a href="#">Unsubscribe</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col-xs-6 col-sm-4 col-md-3 text-xs-right">
+                  <div class="footer_col">
+                    <h4 class="footer_col__title">Support</h4>
+                    <ul>
+                      <li><a href="#">Contact support</a></li>
+                      <li><a href="#">Give feedback</a></li>
+                      <li><a href="#">Knowledge Base</a></li>
+                      <li><a href="#">All articles</a></li>
+                      <li><a href="#">FAQ</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col-xs-12 col-md-3 col-sm-4">
+                  <div class="footer_col">
+                    <h4 class="footer_col__title">Contact Us</h4>
+                    <ul>
+                      <li><a href="#">Post a new idea</a></li>
+                      <li><a href="#">All ideas</a></li>
+                      <li><a href="#">My feedback</a></li>
+                      <li><a href="#">General Feedback</a></li>
+                      <li><a href="#">Report Defect</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3 footer_top__right">
+              <div class="row hidden-xs hidden-sm">
+                <div class="col-xs-12">
+                  <a class="btn btn-block btn-primary" href="#"
+                    >Place a Free Ad</a
+                  >
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-xs-12">
+                  <div class="follow_place">
+                    <div class="row gutter-10 flex-row">
+                      <div class="col-xs-4 text-left">
+                        <p>Follow us</p>
+                      </div>
+                      <div class="col-xs-8 text-right">
+                        <ul class="social_ul">
+                          <li>
+                            <a href="#">
+                              <i class="exp-icon-facebook-logo"></i>
+                            </a>
+                          </li>
+                          <li>
+                            <a href="#">
+                              <i class="exp-icon-instagram-logo"></i>
+                            </a>
+                          </li>
+                          <li>
+                            <a href="#">
+                              <i class="exp-icon-twitter-logo"></i>
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- FOOTER TOP ends-->
+        <!-- FOOTER BOTTOM -->
+        <div class="footer_bottom">
+          <div class="row">
+            <div class="col-md-12">
+              <p class="footer_copy">
+                Copyright 2017 Expatriates.com | All rights reserved
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- FOOTER BOTTOM ends -->
+      </div>
+    </footer>
+    <!-- FOOTER ends -->
+    <!-- Modal -->
+    <div
+      class="modal fade modal-prompt remove_ad_modal"
+      id="removeAd"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="removeModalLabel"
+    >
+      <div class="modal-dialog modal-sm" role="document">
+        <div class="modal-content">
+          <button
+            type="button"
+            class="close"
+            data-dismiss="modal"
+            aria-label="Close"
+          >
+            <i class="exp-icon-close"></i>
+          </button>
+          <div class="modal-body text-center">
+            <div class="row">
+              <div class="col-xs-12 icon-col">
+                <i class="exp-icon-noun_40408_cc"></i>
+              </div>
+
+              <div class="col-xs-12">
+                <p class="font-weight-light">
+                  Are you sure you want to remove this <span id="unit"></span>?
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <div class="row">
+              <div class="col-xs-6">
+                <button
+                  type="button"
+                  class="btn btn-lg btn-block btn-default"
+                  data-dismiss="modal"
+                >
+                  No
+                </button>
+              </div>
+              <div class="col-xs-6">
+                <button type="button" class="btn btn-lg btn-block btn-primary">
+                  Yes
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Modal ends -->
+  </body>
+</html>

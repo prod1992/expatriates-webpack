@@ -3,6 +3,7 @@
 
 @import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
 @import "../../node_modules/select2/src/scss/core";
+@import "../../node_modules/owl.carousel/src/scss/core";
 
 @import "./mixins";
 @import "./utilities";
@@ -12,6 +13,8 @@
 @import './forms';
 @import "./select2";
 @import './buttons';
+@import './modals';
+
 
 @import "./typo";
 @import "./header";
@@ -30,6 +33,9 @@
 @import "./ad-actions";
 @import "./ads-feed";
 @import "./single-ad";
+@import "./ads-slider";
+
+
 @import "./footer";
 
 @import "./responsive";

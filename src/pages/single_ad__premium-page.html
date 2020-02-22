@@ -1,13 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
-    <!-- Required meta tags -->
     <meta charset="ISO-8859-15" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
-    <title>expatriates.com - the online community for expatriates</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Premium / Expatriates</title>
   </head>
   <body>
     <!-- MAIN HEADER -->
@@ -57,11 +53,11 @@
               <a href="#"><i class="nav_icon icon-signin"></i>Sign In</a>
             </li>
             <!-- <li>
-                            <a href="#"><i class="nav_icon icon-myprofile"></i>My Profile</a>
-                    </li>
-                    <li>
-                            <a href="#"><i class="nav_icon icon-signout"></i>Sign Out</a>
-                    </li> -->
+                        <a href="#"><i class="nav_icon icon-myprofile"></i>My Profile</a>
+                </li>
+                <li>
+                        <a href="#"><i class="nav_icon icon-signout"></i>Sign Out</a>
+                </li> -->
             <li class="btn_li">
               <a
                 href="/cgi-local/placead/index.pl"
@@ -74,44 +70,137 @@
       </div>
     </header>
     <!-- MAIN HEADER ends -->
-    <!-- MAIN CONTENT starts -->
-    <div class="main_content">
-      <!-- APP DOWNLOAD -->
-      <div
-        class="page_section bg-darker"
-        style="min-height: 50vh;padding: 40px 0;"
-      >
+    <!-- MAIN CONTENT start -->
+    <div class="main_content bg-darker premium-ad">
+      <div class="page_header">
         <div class="container-fluid">
           <div class="row">
-            <div class="col-md-12">
-              <div>
-                <h2 class="mb-30">Pages</h2>
-              </div>
-              <ol>
-                <li><a href="/home-page.html">Homepage</a></li>
-                <li><a href="/profile-page.html">Profile</a></li>
-                <li><a href="/region-page.html">Region</a></li>
-                <li><a href="/search-page.html">Search</a></li>
-                <li><a href="/create_ad-page0.html">Create Ad (page 0)</a></li>
-                <li><a href="/create_ad-page1.html">Create Ad (page 1)</a></li>
-                <li><a href="/create_ad-page2.html">Create Ad (page 2)</a></li>
-                <li><a href="/create_ad-page3.html">Create Ad (page 3)</a></li>
-                <li><a href="/single_ad-page.html">Single Ad</a></li>
-                <li>
-                  <a href="/single_ad__modify-page.html">Single Ad Modify</a>
-                </li>
-                <li><a href="/single_ad__own-page.html">Single Ad Own</a></li>
-                <li>
-                  <a href="/single_ad__premium-page.html">Single Ad Premium</a>
-                </li>
-              </ol>
+            <div class="col-xs-12">
+              <h3 class="page_header__title">
+                <span
+                  class="bg-success img-circle icon-rounded icon-rounded-small"
+                  ><i class="exp-icon-noun_430013_cc"></i
+                ></span>
+                Premium Ad
+              </h3>
             </div>
           </div>
         </div>
       </div>
-      <!-- APP DOWNLOAD ends -->
+      <div class="page_section">
+        <div class="container-fluid">
+          <div class="white_box">
+            <div class="box_header">
+              <a class="back_btn" href="#">Back<i class="exp-icon-left"></i></a>
+            </div>
+            <div class="box_content">
+              <div class="row">
+                <div class="col-xs-12">
+                  <div class="box_content__header">
+                    <h4 class="box_content__title">
+                      Premium ads appear at the top of the list for up to 180
+                      days
+                    </h4>
+                    <div>
+                      <a href="#" class="text-primary"
+                        >Please activate your ad first!</a
+                      >
+                    </div>
+                  </div>
+                  <div class="box_content__inner">
+                    <form name="activatePremium">
+                      <div class="row">
+                        <div class="col-sm-8 left-hand">
+                          <div class="form-group required">
+                            <label for="pAmmount"
+                              ><span>Payment amount</span></label
+                            >
+                            <select
+                              name="pAmmount"
+                              id="pAmmount"
+                              class="form-control"
+                              style="width: 100%;"
+                            >
+                              <option value="10">$10.00</option>
+                              <option value="25">$25.00</option>
+                              <option value="50">$50.00</option>
+                            </select>
+                          </div>
+                          <div class="form-group required">
+                            <label for="dNumber">Number of days</label>
+                            <p class="help-block">
+                              Please enter the number of days to publish your
+                              ad. <br />
+                              Do not enter decimal values
+                            </p>
+                            <input
+                              id="dNumber"
+                              name="dNumber"
+                              type="text"
+                              class="form-control"
+                              value="10"
+                            />
+                          </div>
+                        </div>
+                        <div class="col-sm-4 right-hand">
+                          <div class="result_box">
+                            <label>Daily rate: $10</label>
+                            <p class="help-block">
+                              The higher the daily rate the higher the Ad will
+                              appear on the list
+                            </p>
+                          </div>
+                          <div class="result_box">
+                            <label class="result_box__title"
+                              >Discount: ($0.00)</label
+                            >
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-xs-12 text-right">
+                          <div class="final_amount">
+                            <label class="result_box__title">
+                              Final amount: $10.00
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-xs-12">
+                          <div class="form-group actions-group">
+                            <div class="row">
+                              <div class="col-xs-6">
+                                <button
+                                  type="button"
+                                  class="btn btn-lg btn-block btn-default"
+                                  data-dismiss="modal"
+                                >
+                                  Cancel
+                                </button>
+                              </div>
+                              <div class="col-xs-6">
+                                <button
+                                  type="button"
+                                  class="btn btn-lg btn-block btn-primary"
+                                >
+                                  Buy Now
+                                </button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-    <!-- MAIN CONTENT ends -->
+    <!-- MAIN CONTENT end -->
     <!-- FOOTER -->
     <footer>
       <div class="container-fluid">
@@ -161,7 +250,7 @@
             <div class="col-md-3 footer_top__right">
               <div class="row hidden-xs hidden-sm">
                 <div class="col-xs-12">
-                  <a class="btn btn-primary btn-block" href="#"
+                  <a class="btn btn-block btn-primary" href="#"
                     >Place a Free Ad</a
                   >
                 </div>

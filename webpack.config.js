@@ -206,6 +206,54 @@ const config = function(env, args) {
         ),
         favicon: path.resolve(__dirname, "src", "images", "favicon.ico")
       }),
+      new HtmlWebpackPlugin({
+        inject: true,
+        hash: false,
+        filename: "single_ad-page.html",
+        template: path.resolve(
+            __dirname,
+            "src",
+            "pages",
+            "single_ad-page.html"
+        ),
+        favicon: path.resolve(__dirname, "src", "images", "favicon.ico")
+      }),
+      new HtmlWebpackPlugin({
+        inject: true,
+        hash: false,
+        filename: "single_ad__modify-page.html",
+        template: path.resolve(
+            __dirname,
+            "src",
+            "pages",
+            "single_ad__modify-page.html"
+        ),
+        favicon: path.resolve(__dirname, "src", "images", "favicon.ico")
+      }),
+      new HtmlWebpackPlugin({
+        inject: true,
+        hash: false,
+        filename: "single_ad__own-page.html",
+        template: path.resolve(
+            __dirname,
+            "src",
+            "pages",
+            "single_ad__own-page.html"
+        ),
+        favicon: path.resolve(__dirname, "src", "images", "favicon.ico")
+      }),
+      new HtmlWebpackPlugin({
+        inject: true,
+        hash: false,
+        filename: "single_ad__premium-page.html",
+        template: path.resolve(
+            __dirname,
+            "src",
+            "pages",
+            "single_ad__premium-page.html"
+        ),
+        favicon: path.resolve(__dirname, "src", "images", "favicon.ico")
+      }),
       new MiniCssExtractPlugin({
         filename: "css/[name].css"
       }),
