@@ -2,6 +2,7 @@ import "./scss/homepage.scss";
 import "bootstrap-sass/assets/javascripts/bootstrap/dropdown";
 import "jquery-ui/ui/widgets/autocomplete";
 import "./js/autocomplete";
+import "./js/header";
 
 (function() {
   $(document).on("click", ".categories_dropdown [data-value] a", function(e) {

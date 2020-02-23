@@ -1,6 +1,5 @@
 $(function() {
   const ww = $(window).width();
-
   const mobileCheck = function() {
     let check = false;
     (function(a) {
@@ -16,7 +15,6 @@ $(function() {
     })(navigator.userAgent || navigator.vendor || window.opera);
     return check;
   };
-
   const $menuToggler = $(".menu_toggler");
 
   // $( '.scrollable-y' ).perfectScrollbar( {
@@ -71,9 +69,6 @@ $(function() {
 
   $menuToggler.click(function(e) {
     e.preventDefault();
-    // $menuToggler.toggleClass("active");
-    // $menu.toggleClass("active");
-    // return false
     $("body").toggleClass("nav-open");
   });
 
