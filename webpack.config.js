@@ -15,7 +15,6 @@ const serverConfiguration = {
 };
 
 const path = require("path");
-const OptimizeCssAssetsPlugin = require("optimize-css-assets-webpack-plugin");
 const BrowserSyncPlugin = require("browser-sync-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
@@ -23,9 +22,12 @@ const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 const TerserPlugin = require("terser-webpack-plugin");
 const CopyWebpackPlugin = require("copy-webpack-plugin");
 const ImageMinPlugin = require("imagemin-webpack-plugin").default;
-const PurifyCSSPlugin = require("purifycss-webpack");
-const glob = require("glob-all");
+const PurgecssPlugin = require("purgecss-webpack-plugin");
 
+const glob = require("glob");
+const PATHS = {
+  src: path.join(__dirname, 'src')
+}
 const webpack = require("webpack");
 
 let targetServerConfiguration = serverConfiguration.internal;
@@ -89,11 +91,16 @@ const config = function(env, args) {
       ]
     },
     optimization: {
-      minimizer: [
-        new TerserPlugin({
-          parallel: true
-        })
-      ]
+      splitChunks: {
+        cacheGroups: {
+          styles: {
+            name: "styles",
+            test: /\.css$/,
+            chunks: "all",
+            enforce: true
+          }
+        }
+      }
     },
     watchOptions: {
       poll: 1000,
@@ -256,12 +263,8 @@ const config = function(env, args) {
       new MiniCssExtractPlugin({
         filename: "css/[name].css"
       }),
-      new PurifyCSSPlugin({
-        paths: glob.sync([path.join(__dirname, "src/pages/home-page.html")]),
-        minimize: true,
-        purifyOptions: {
-          whitelist: []
-        }
+      new PurgecssPlugin({
+        paths: glob.sync(`${PATHS.src}/pages/home-page.html`,  { nodir: true }),
       }),
       new ImageMinPlugin({ test: /\.(jpg|jpeg|png|gif|svg)$/i }),
       new CleanWebpackPlugin({
