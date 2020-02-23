@@ -23,7 +23,7 @@ const CopyWebpackPlugin = require("copy-webpack-plugin");
 const ImageMinPlugin = require("imagemin-webpack-plugin").default;
 
 const PurgecssPlugin = require("purgecss-webpack-plugin");
-const glob = require("glob-all");
+const glob = require("glob");
 const webpack = require("webpack");
 
 const PATHS = {
@@ -69,7 +69,7 @@ const config = function(env, args) {
             {
               loader: "url-loader",
               options: {
-                name: "images/design/[name].[hash:6].[ext]",
+                name: "images/[name].[hash:6].[ext]",
                 publicPath: "../",
                 limit: 8192
               }
@@ -142,6 +142,7 @@ const config = function(env, args) {
         favicon: path.resolve(__dirname, "src", "images", "favicon.ico")
       }),
       new HtmlWebpackPlugin({
+        excludeChunks: ["homepage"],
         inject: true,
         hash: false,
         filename: "profile-page.html",
@@ -149,6 +150,7 @@ const config = function(env, args) {
         favicon: path.resolve(__dirname, "src", "images", "favicon.ico")
       }),
       new HtmlWebpackPlugin({
+        excludeChunks: ["homepage"],
         inject: true,
         hash: false,
         filename: "region-page.html",
@@ -156,6 +158,7 @@ const config = function(env, args) {
         favicon: path.resolve(__dirname, "src", "images", "favicon.ico")
       }),
       new HtmlWebpackPlugin({
+        excludeChunks: ["homepage"],
         inject: true,
         hash: false,
         filename: "search-page.html",
@@ -163,6 +166,7 @@ const config = function(env, args) {
         favicon: path.resolve(__dirname, "src", "images", "favicon.ico")
       }),
       new HtmlWebpackPlugin({
+        excludeChunks: ["homepage"],
         inject: true,
         hash: false,
         filename: "create_ad-page0.html",
@@ -175,6 +179,7 @@ const config = function(env, args) {
         favicon: path.resolve(__dirname, "src", "images", "favicon.ico")
       }),
       new HtmlWebpackPlugin({
+        excludeChunks: ["homepage"],
         inject: true,
         hash: false,
         filename: "create_ad-page1.html",
@@ -187,6 +192,7 @@ const config = function(env, args) {
         favicon: path.resolve(__dirname, "src", "images", "favicon.ico")
       }),
       new HtmlWebpackPlugin({
+        excludeChunks: ["homepage"],
         inject: true,
         hash: false,
         filename: "create_ad-page2.html",
@@ -199,6 +205,7 @@ const config = function(env, args) {
         favicon: path.resolve(__dirname, "src", "images", "favicon.ico")
       }),
       new HtmlWebpackPlugin({
+        excludeChunks: ["homepage"],
         inject: true,
         hash: false,
         filename: "create_ad-page3.html",
@@ -211,6 +218,7 @@ const config = function(env, args) {
         favicon: path.resolve(__dirname, "src", "images", "favicon.ico")
       }),
       new HtmlWebpackPlugin({
+        excludeChunks: ["homepage"],
         inject: true,
         hash: false,
         filename: "single_ad-page.html",
@@ -223,6 +231,7 @@ const config = function(env, args) {
         favicon: path.resolve(__dirname, "src", "images", "favicon.ico")
       }),
       new HtmlWebpackPlugin({
+        excludeChunks: ["homepage"],
         inject: true,
         hash: false,
         filename: "single_ad__modify-page.html",
@@ -235,6 +244,7 @@ const config = function(env, args) {
         favicon: path.resolve(__dirname, "src", "images", "favicon.ico")
       }),
       new HtmlWebpackPlugin({
+        excludeChunks: ["homepage"],
         inject: true,
         hash: false,
         filename: "single_ad__own-page.html",
@@ -247,6 +257,7 @@ const config = function(env, args) {
         favicon: path.resolve(__dirname, "src", "images", "favicon.ico")
       }),
       new HtmlWebpackPlugin({
+        excludeChunks: ["homepage"],
         inject: true,
         hash: false,
         filename: "single_ad__premium-page.html",
@@ -262,9 +273,7 @@ const config = function(env, args) {
         filename: "css/[name].css"
       }),
       new PurgecssPlugin({
-        paths: glob.sync([`${PATHS.src}/**/*.html`, `${PATHS.src}/**/*.js`], {
-          nodir: true
-        }),
+        paths: glob.sync(`${PATHS.src}/**/*`, { nodir: true }),
         only: ["homepage"]
       }),
       new ImageMinPlugin({ test: /\.(jpg|jpeg|png|gif|svg)$/i }),
@@ -293,12 +302,7 @@ const config = function(env, args) {
         }
       ])
     ],
-    devtool: "cheap-eval-source-map",
-    devServer: {
-      stats: {
-        colors: true
-      }
-    }
+    devtool: "cheap-eval-source-map"
   };
 };
 
