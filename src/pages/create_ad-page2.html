@@ -1,304 +1,125 @@
 <!DOCTYPE html>
 <html>
-
-<head>
-
-    <meta charset="ISO-8859-15">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <head>
+    <meta charset="ISO-8859-15" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Premium / Expatriates</title>
-
-    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-
-    <!-- build:css({.tmp/app,src}) styles/style3.0.css -->
-    <!-- bower:css -->
-    <!-- run `gulp inject` to automatically populate bower styles dependencies -->
-    <!-- endbower -->
-    <!-- inject:css -->
-    <!-- css files will be automatically insert here -->
-    <!-- endinject -->
-    <!-- endbuild -->
-
-</head>
-
-<body class="bg-darker">
-
-<!-- MAIN HEADER -->
-<header class="main-header clearfix">
-    <!-- Overlay -->
-    <div class="dark-overlay">
-    </div>
-    <div class="container-fluid">
-        <a href="/" class="menu_toggler">
-            <span class="line top"></span>
-            <span class="line mid"></span>
-            <span class="line bot"></span>
-        </a>
-        <h2 class="logo">
-            <a href="/">
-                    <span class="logo_icon">
-
-                    </span>
-                <span class="logo_top">expatriates.com</span>
-                <span class="logo_bot">The online community for expatriates</span>
-            </a>
-        </h2>
-        <nav id="menu" class="main-nav desktop-nav">
-            <ul>
-                <li class="logo-in-nav">
-                    <h2 class="logo">
-                        <a href="/">
-                                <span class="logo_icon">
-
-                                </span>
-                            <span class="logo_top">expatriates.com</span>
-                            <span class="logo_bot">The online community for expatriates</span>
-                        </a>
-                    </h2>
-                </li>
-                <li>
-                    <a href="/"><i class="nav_icon exp-icon-home"></i>Home</a>
-                </li>
-                <li>
-                    <a href="/scripts/posting/subscribe.epl">
-                        <i class="nav_icon exp-icon-letter"></i> Subscribe
-                    </a>
-                </li>
-                <li>
-                    <a href="/html/contactus.html"><i class="nav_icon exp-icon-letter"></i>Contact Us</a>
-                </li>
-                <li>
-                    <a href="#"><i class="nav_icon icon-signin"></i>Sign In</a>
-                </li>
-                <!-- <li>
-                        <a href="#"><i class="nav_icon icon-myprofile"></i>My Profile</a>
-                </li>
-                <li>
-                        <a href="#"><i class="nav_icon icon-signout"></i>Sign Out</a>
-                </li> -->
-                <li class="btn_li">
-                    <a href="/cgi-local/placead/index.pl" class="btn btn-primary btn-block btn-with-icon icon-on-left"><i
-                            class="exp-icon-plus_rounded"></i>Place
-                        an Ad</a>
-                </li>
-            </ul>
-        </nav>
-    </div>
-</header>
-<!-- MAIN HEADER ends -->
-<!-- MAIN CONTENT start -->
-<div class="main_content">
-    <!-- PLACE AN AD TOP start -->
-    <div class="page_hero place_ad__hero">
+  </head>
+  <body class="bg-darker">
+    <%= require('html-loader!../partials/header.html') %>
+    <!-- MAIN CONTENT start -->
+    <div class="main_content">
+      <!-- PLACE AN AD TOP start -->
+      <div class="page_hero place_ad__hero">
         <div class="container-fluid">
-            <div class="row">
-                <div class="col-sm-5 col-md-4">
-                    <!-- PLACE AN AD TITLE start -->
-                    <div class="place_ad_title">
-                            <span class="icon-rounded bg-default">
-                                <i class="exp-icon-noun_594741_cc"></i>
-                            </span> Place A Free Ad
-                    </div>
-                    <!-- PLACE AN AD TITLE end -->
-                </div>
-                <div class="col-sm-7 col-md-8">
-                    <div class="steps_list__ordered">
-                        <ul>
-                            <li class="active">
-                                <a href="#">1</a>
-                            </li>
-                            <li class="active">
-                                <a href="#">2</a>
-                            </li>
-                            <li>
-                                <a href="#">3</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
+          <div class="row">
+            <div class="col-sm-5 col-md-4">
+              <!-- PLACE AN AD TITLE start -->
+              <div class="place_ad_title">
+                <span class="icon-rounded bg-default">
+                  <i class="exp-icon-noun_594741_cc"></i>
+                </span>
+                Place A Free Ad
+              </div>
+              <!-- PLACE AN AD TITLE end -->
             </div>
+            <div class="col-sm-7 col-md-8">
+              <div class="steps_list__ordered">
+                <ul>
+                  <li class="active">
+                    <a href="#">1</a>
+                  </li>
+                  <li class="active">
+                    <a href="#">2</a>
+                  </li>
+                  <li>
+                    <a href="#">3</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
         </div>
-    </div>
-    <!-- PLACE AN AD TOP ends -->
-    <div class="page_section">
+      </div>
+      <!-- PLACE AN AD TOP ends -->
+      <div class="page_section">
         <div class="container-fluid">
-            <div class="row">
-                <div class="col-md-12">
-
-                    <div class="white_box">
-
-                        <div class="box_header">
-                            <div class="row">
-                                <div class="col-xs-12">
-                                    <a class="back_btn" href="#">Auto Parts<i class="exp-icon-left"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="box_content">
-                            <div class="row">
-                                <div class="col-xs-12">
-                                    <!-- CHOOSE LOCATION start-->
-                                    <div class="choose_location">
-                                        <div class="box_content__header has-icon-top border-0">
-                                            <div>
-                                                <i class="exp-icon-noun_779132_cc"></i>
-                                            </div>
-                                            <div>
-                                                Choose Location
-                                            </div>
-                                        </div>
-                                        <div class="box_content__inner">
-                                            <form id="place_ad_location-form">
-                                                <div class="form-group required">
-                                                    <label for="pCity">Posting City</label>
-                                                    <p class="help-block">For maximum exposure, we recommend you place your ad in the city nearest
-                                                        you as the ad will also automatically appear in the corresponding country and the
-                                                        International section</p>
-                                                    <input id="pCity" name="pCity" class="form-control" type="text" />
-                                                </div>
-                                                <div class="form-group">
-                                                    <label for="otherLocations">Other Locations</label>
-                                                    <p class="help-block">If you wish to provide more specific
-                                                        information
-                                                        about the location, please enter it here</p>
-                                                    <input id="otherLocations" name="otherLocations"
-                                                           class="form-control"
-                                                           type="text" />
-                                                </div>
-                                                <div class="form-group actions-group">
-                                                    <button class="btn btn-block btn-primary">Next</button>
-                                                </div>
-                                            </form>
-                                        </div>
-                                    </div>
-                                    <!-- CHOOSE LOCATION ends-->
-                                </div>
-                            </div>
-                        </div>
-
+          <div class="row">
+            <div class="col-md-12">
+              <div class="white_box">
+                <div class="box_header">
+                  <div class="row">
+                    <div class="col-xs-12">
+                      <a class="back_btn" href="#"
+                        >Auto Parts<i class="exp-icon-left"></i
+                      ></a>
                     </div>
-
+                  </div>
                 </div>
+                <div class="box_content">
+                  <div class="row">
+                    <div class="col-xs-12">
+                      <!-- CHOOSE LOCATION start-->
+                      <div class="choose_location">
+                        <div class="box_content__header has-icon-top border-0">
+                          <div>
+                            <i class="exp-icon-noun_779132_cc"></i>
+                          </div>
+                          <div>
+                            Choose Location
+                          </div>
+                        </div>
+                        <div class="box_content__inner">
+                          <form id="place_ad_location-form">
+                            <div class="form-group required">
+                              <label for="pCity">Posting City</label>
+                              <p class="help-block">
+                                For maximum exposure, we recommend you place
+                                your ad in the city nearest you as the ad will
+                                also automatically appear in the corresponding
+                                country and the International section
+                              </p>
+                              <input
+                                id="pCity"
+                                name="pCity"
+                                class="form-control"
+                                type="text"
+                              />
+                            </div>
+                            <div class="form-group">
+                              <label for="otherLocations"
+                                >Other Locations</label
+                              >
+                              <p class="help-block">
+                                If you wish to provide more specific information
+                                about the location, please enter it here
+                              </p>
+                              <input
+                                id="otherLocations"
+                                name="otherLocations"
+                                class="form-control"
+                                type="text"
+                              />
+                            </div>
+                            <div class="form-group actions-group">
+                              <button class="btn btn-block btn-primary">
+                                Next
+                              </button>
+                            </div>
+                          </form>
+                        </div>
+                      </div>
+                      <!-- CHOOSE LOCATION ends-->
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
+          </div>
         </div>
+      </div>
     </div>
-</div>
-<!-- MAIN CONTENT end -->
-<!-- FOOTER -->
-<footer>
-    <div class="container-fluid">
-        <!-- FOOTER TOP -->
-        <div class="footer_top">
-            <div class="row">
-                <div class="col-md-9 footer_top__left">
-                    <div class="row">
-                        <div class="col-xs-6 col-sm-4 col-md-3">
-                            <div class="footer_col">
-                                <h4 class="footer_col__title">Platform</h4>
-                                <ul>
-                                    <li><a href="#">Advertising</a></li>
-                                    <li><a href="#">Terms of Use</a></li>
-                                    <li><a href="#">Privacy</a></li>
-                                    <li><a href="#">System Status</a></li>
-                                    <li><a href="#">Unsubscribe</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="col-xs-6 col-sm-4 col-md-3 text-xs-right">
-                            <div class="footer_col">
-                                <h4 class="footer_col__title">Support</h4>
-                                <ul>
-                                    <li><a href="#">Contact support</a></li>
-                                    <li><a href="#">Give feedback</a></li>
-                                    <li><a href="#">Knowledge Base</a></li>
-                                    <li><a href="#">All articles</a></li>
-                                    <li><a href="#">FAQ</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="col-xs-12 col-md-3 col-sm-4">
-                            <div class="footer_col">
-                                <h4 class="footer_col__title">Contact Us</h4>
-                                <ul>
-                                    <li><a href="#">Post a new idea</a></li>
-                                    <li><a href="#">All ideas</a></li>
-                                    <li><a href="#">My feedback</a></li>
-                                    <li><a href="#">General Feedback</a></li>
-                                    <li><a href="#">Report Defect</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3 footer_top__right">
-                    <div class="row hidden-xs hidden-sm">
-                        <div class="col-xs-12">
-                            <a class="btn btn-block btn-primary" href="#">Place a Free Ad</a>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-xs-12">
-                            <div class="follow_place">
-                                <div class="row gutter-10 flex-row">
-                                    <div class="col-xs-4 text-left">
-                                        <p>Follow us</p>
-                                    </div>
-                                    <div class="col-xs-8 text-right">
-                                        <ul class="social_ul">
-                                            <li>
-                                                <a href="#">
-                                                    <i class="exp-icon-facebook-logo"></i>
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="#">
-                                                    <i class="exp-icon-instagram-logo"></i>
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="#">
-                                                    <i class="exp-icon-twitter-logo"></i>
-                                                </a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-        <!-- FOOTER TOP ends-->
-        <!-- FOOTER BOTTOM -->
-        <div class="footer_bottom">
-            <div class="row">
-                <div class="col-md-12">
-                    <p class="footer_copy">Copyright 2017 Expatriates.com | All rights reserved</p>
-                </div>
-            </div>
-        </div>
-        <!-- FOOTER BOTTOM ends -->
-    </div>
-</footer>
-<!-- FOOTER ends -->
-
-<!-- build:js({.tmp/app,.tmp/partials,src}) scripts/app.js -->
-
-<!-- bower:js -->
-<!-- run `gulp inject` to automatically populate bower script dependencies -->
-<!-- endbower -->
-
-<!-- inject:plugin:js -->
-<!-- plugin js files will be automatically insert here -->
-<!-- endinject -->
-
-<!-- inject:js -->
-<!-- js files will be automatically insert here -->
-<!-- endinject -->
-
-<!-- endbuild -->
-
-</body>
-
+    <!-- MAIN CONTENT end -->
+    <%= require('html-loader!../partials/footer.html') %>
+  </body>
 </html>
