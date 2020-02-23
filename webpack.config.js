@@ -260,8 +260,8 @@ const config = function(env, args) {
       }),
       new PurifyCSSPlugin({
         paths: glob.sync([
-          path.join(__dirname, 'src/*.html'),
-          path.join(__dirname, 'src/*.js')
+          path.join(__dirname, 'src/**/*.html'),
+          path.join(__dirname, 'src/**/*.js')
         ]),
         minimize: true,
         purifyOptions: {
@@ -294,7 +294,7 @@ const config = function(env, args) {
         }
       ])
     ],
-    devtool: "cheap-eval-source-map",
+    devtool: "source-map",
     devServer: {
       hot: true
     }
