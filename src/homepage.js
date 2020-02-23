@@ -1,6 +1,5 @@
 import "./scss/homepage.scss";
 
-
 import "bootstrap-sass/assets/javascripts/bootstrap/transition";
 import "bootstrap-sass/assets/javascripts/bootstrap/dropdown";
 import "bootstrap-sass/assets/javascripts/bootstrap/collapse";
@@ -72,5 +71,17 @@ import "./js/header";
           .parents(".dropdown-submenu")
           .addClass("open");
       }
+    });
+
+  $(".category_box .collapse")
+    .on("show.bs.collapse", function() {
+      $(this)
+        .parents(".category_box")
+        .addClass("is_expanded");
+    })
+    .on("hide.bs.collapse", function() {
+      $(this)
+        .parents(".category_box")
+        .removeClass("is_expanded");
     });
 })();
