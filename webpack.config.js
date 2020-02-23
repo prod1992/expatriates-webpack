@@ -266,7 +266,7 @@ const config = function(env, args) {
         only: ["homepage"],
         whitelistPatterns: function collectWhitelistPatternsChildren() {
           // do something to collect the whitelist
-          return [/^exp-icon/];
+          return [/exp-icon/];
         }
       }),
       new ImageMinPlugin({ test: /\.(jpg|jpeg|png|gif|svg)$/i }),
