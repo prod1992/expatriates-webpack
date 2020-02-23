@@ -117,10 +117,10 @@ const config = function(env, args) {
         reloadDelay: 0
       }),
       new webpack.ProvidePlugin({
-        $: "jquery",
-        jquery: "jquery",
-        "window.jQuery": "jquery",
-        jQuery: "jquery"
+        $: "jquery/dist/jquery.min.js",
+        jquery: "jquery/dist/jquery.min.js",
+        "window.jQuery": "jquery/dist/jquery.min.js",
+        jQuery: "jquery/dist/jquery.min.js"
       }),
       new HtmlWebpackPlugin({
         inject: true,
