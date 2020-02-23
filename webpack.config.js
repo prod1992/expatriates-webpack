@@ -1,7 +1,6 @@
 /**
  * Assets Config file
  */
-
 const serverConfiguration = {
   internal: {
     server: {
@@ -13,7 +12,6 @@ const serverConfiguration = {
     proxy: "http://localhost:9000/path/to/project/"
   }
 };
-
 const path = require("path");
 const OptimizeCssAssetsPlugin = require("optimize-css-assets-webpack-plugin");
 const BrowserSyncPlugin = require("browser-sync-webpack-plugin");
@@ -24,7 +22,13 @@ const TerserPlugin = require("terser-webpack-plugin");
 const CopyWebpackPlugin = require("copy-webpack-plugin");
 const ImageMinPlugin = require("imagemin-webpack-plugin").default;
 
+const PurgecssPlugin = require("purgecss-webpack-plugin");
+const glob = require("glob");
 const webpack = require("webpack");
+
+const PATHS = {
+  src: path.join(__dirname, "src")
+};
 
 let targetServerConfiguration = serverConfiguration.internal;
 
@@ -256,6 +260,10 @@ const config = function(env, args) {
       }),
       new MiniCssExtractPlugin({
         filename: "css/[name].css"
+      }),
+      new PurgecssPlugin({
+        paths: glob.sync(`${PATHS.src}/**/*`, { nodir: true }),
+        only: ["homepage"]
       }),
       new ImageMinPlugin({ test: /\.(jpg|jpeg|png|gif|svg)$/i }),
       new CleanWebpackPlugin({
