@@ -23,8 +23,10 @@ const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 const TerserPlugin = require("terser-webpack-plugin");
 const CopyWebpackPlugin = require("copy-webpack-plugin");
 const ImageMinPlugin = require("imagemin-webpack-plugin").default;
-const BundleAnalyzerPlugin = require("webpack-bundle-analyzer")
-  .BundleAnalyzerPlugin;
+const PurifyCSSPlugin = require("purifycss-webpack");
+const glob = require("glob-all");
+
+
 
 const webpack = require("webpack");
 
@@ -92,8 +94,7 @@ const config = function(env, args) {
       minimizer: [
         new TerserPlugin({
           parallel: true
-        }),
-        new OptimizeCssAssetsPlugin({})
+        })
       ]
     },
     watchOptions: {
@@ -211,10 +212,10 @@ const config = function(env, args) {
         hash: false,
         filename: "single_ad-page.html",
         template: path.resolve(
-            __dirname,
-            "src",
-            "pages",
-            "single_ad-page.html"
+          __dirname,
+          "src",
+          "pages",
+          "single_ad-page.html"
         ),
         favicon: path.resolve(__dirname, "src", "images", "favicon.ico")
       }),
@@ -223,10 +224,10 @@ const config = function(env, args) {
         hash: false,
         filename: "single_ad__modify-page.html",
         template: path.resolve(
-            __dirname,
-            "src",
-            "pages",
-            "single_ad__modify-page.html"
+          __dirname,
+          "src",
+          "pages",
+          "single_ad__modify-page.html"
         ),
         favicon: path.resolve(__dirname, "src", "images", "favicon.ico")
       }),
@@ -235,10 +236,10 @@ const config = function(env, args) {
         hash: false,
         filename: "single_ad__own-page.html",
         template: path.resolve(
-            __dirname,
-            "src",
-            "pages",
-            "single_ad__own-page.html"
+          __dirname,
+          "src",
+          "pages",
+          "single_ad__own-page.html"
         ),
         favicon: path.resolve(__dirname, "src", "images", "favicon.ico")
       }),
@@ -247,15 +248,25 @@ const config = function(env, args) {
         hash: false,
         filename: "single_ad__premium-page.html",
         template: path.resolve(
-            __dirname,
-            "src",
-            "pages",
-            "single_ad__premium-page.html"
+          __dirname,
+          "src",
+          "pages",
+          "single_ad__premium-page.html"
         ),
         favicon: path.resolve(__dirname, "src", "images", "favicon.ico")
       }),
       new MiniCssExtractPlugin({
         filename: "css/[name].css"
+      }),
+      new PurifyCSSPlugin({
+        paths: glob.sync([
+          path.join(__dirname, 'src/*.html'),
+          path.join(__dirname, 'src/*.js')
+        ]),
+        minimize: true,
+        purifyOptions: {
+          whitelist: []
+        }
       }),
       new ImageMinPlugin({ test: /\.(jpg|jpeg|png|gif|svg)$/i }),
       new CleanWebpackPlugin({
@@ -283,7 +294,10 @@ const config = function(env, args) {
         }
       ])
     ],
-    devtool: "cheap-eval-source-map "
+    devtool: "cheap-eval-source-map",
+    devServer: {
+      hot: true
+    }
   };
 };
 

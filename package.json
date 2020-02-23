@@ -57,12 +57,15 @@
     "fibers": "^4.0.2",
     "file-loader": "^5.0.2",
     "gh-pages": "^2.1.1",
+    "glob-all": "^3.1.0",
     "html-webpack-plugin": "^3.2.0",
     "imagemin-webpack-plugin": "^2.4.2",
     "mini-css-extract-plugin": "^0.9.0",
     "node-sass": "^4.13.0",
     "optimize-css-assets-webpack-plugin": "^5.0.3",
     "postcss-loader": "^3.0.0",
+    "purify-css": "^1.2.5",
+    "purifycss-webpack": "^0.7.0",
     "sass": "^1.24.1",
     "sass-lint": "^1.13.1",
     "sass-loader": "^8.0.0",
@@ -70,7 +73,6 @@
     "terser-webpack-plugin": "^2.3.1",
     "url-loader": "^3.0.0",
     "webpack": "^4.41.5",
-    "webpack-bundle-analyzer": "^3.6.0",
     "webpack-cli": "^3.3.10"
   }
 }
