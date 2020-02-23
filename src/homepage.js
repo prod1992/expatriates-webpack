@@ -1,5 +1,8 @@
 import "./scss/homepage.scss";
+
 import "bootstrap-sass/assets/javascripts/bootstrap/dropdown";
+import "bootstrap-sass/assets/javascripts/bootstrap/collapse";
+
 import "jquery-ui/ui/widgets/autocomplete";
 import "./js/autocomplete";
 import "./js/header";

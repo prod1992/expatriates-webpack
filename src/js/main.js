@@ -67,11 +67,6 @@ $(function() {
         .removeClass("is_expanded");
     });
 
-  $menuToggler.click(function(e) {
-    e.preventDefault();
-    $("body").toggleClass("nav-open");
-  });
-
   $(".toggle_container").hide();
 
   $(".toggle").click(function() {
@@ -92,10 +87,6 @@ $(function() {
   $(".scrolltop").click(function() {
     $("html, body").animate({ scrollTop: 0 }, 600);
     return false;
-  });
-
-  $(".dark-overlay").on("click touchend", function() {
-    $("body").removeClass("nav-open");
   });
 
   $("select").select2({
