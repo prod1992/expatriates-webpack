@@ -15,35 +15,10 @@ $(function() {
     })(navigator.userAgent || navigator.vendor || window.opera);
     return check;
   };
-  const $menuToggler = $(".menu_toggler");
 
   // $( '.scrollable-y' ).perfectScrollbar( {
   //     wheelPropagation: true
   // });
-
-  $(".dropdown-submenu > a").on("click", function(e) {
-    e.preventDefault();
-    if (ww < 768) {
-      e.stopPropagation();
-      if (
-        $(this)
-          .parents(".dropdown-submenu")
-          .hasClass("open")
-      ) {
-        $(this)
-          .parents(".dropdown-submenu")
-          .removeClass("open");
-        return;
-      }
-      $(this)
-        .parents(".dropdown-menu")
-        .find(".dropdown-submenu")
-        .removeClass("open");
-      $(this)
-        .parents(".dropdown-submenu")
-        .addClass("open");
-    }
-  });
 
   $(".dropdown-back_btn").on("click", function(e) {
     if (mobileCheck()) {
@@ -54,18 +29,6 @@ $(function() {
         .removeClass("open");
     }
   });
-
-  $(".category_box .collapse")
-    .on("show.bs.collapse", function() {
-      $(this)
-        .parents(".category_box")
-        .addClass("is_expanded");
-    })
-    .on("hide.bs.collapse", function() {
-      $(this)
-        .parents(".category_box")
-        .removeClass("is_expanded");
-    });
 
   $(".toggle_container").hide();
 
@@ -97,25 +60,6 @@ $(function() {
   $(".ads_feed .in_favorites").on("click", function(e) {
     e.preventDefault();
     $(this).toggleClass("in");
-  });
-  // INPUTS WITH CLEAR
-  $(".form-group.has-clear").each(function() {
-    var $el = $(this),
-      $input = $el.find("input:text"),
-      $clearBtn = $('<span class="clear-btn exp-icon-close"></span>');
-    $el.prepend($clearBtn);
-    $input.on("input", function() {
-      if (!!this.value) {
-        $el.addClass("has-value");
-      } else {
-        $el.removeClass("has-value");
-      }
-    });
-    $clearBtn.on("click", function(e) {
-      e.preventDefault();
-      $input.val("").trigger("input");
-      $input.trigger("input:clear");
-    });
   });
 
   $(document)
