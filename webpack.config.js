@@ -260,7 +260,7 @@ const config = function(env, args) {
       }),
       new PurifyCSSPlugin({
         paths: glob.sync([
-          path.join(__dirname, 'src/**/*.html'),
+          path.join(__dirname, 'src/pages/home-page.html'),
           path.join(__dirname, 'src/**/*.js')
         ]),
         minimize: true,
