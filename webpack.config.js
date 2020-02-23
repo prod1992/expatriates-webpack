@@ -130,6 +130,7 @@ const config = function(env, args) {
         favicon: path.resolve(__dirname, "src", "images", "favicon.ico")
       }),
       new HtmlWebpackPlugin({
+        chunks: ["homepage"],
         inject: true,
         hash: false,
         filename: "home-page.html",
@@ -282,7 +283,12 @@ const config = function(env, args) {
         }
       ])
     ],
-    devtool: "cheap-eval-source-map "
+    devtool: "cheap-eval-source-map",
+    devServer: {
+      stats: {
+        colors: true
+      }
+    }
   };
 };
 
