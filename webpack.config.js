@@ -264,7 +264,7 @@ const config = function(env, args) {
       new PurgecssPlugin({
         paths: glob.sync(`${PATHS.src}/**/*`, { nodir: true }),
         only: ["homepage"],
-        whitelistPatterns: [/nav-open/, /exp-.*/]
+        whitelistPatterns: [/exp-icon-.*/]
       }),
       new ImageMinPlugin({ test: /\.(jpg|jpeg|png|gif|svg)$/i }),
       new CleanWebpackPlugin({
