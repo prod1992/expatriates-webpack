@@ -4,7 +4,6 @@ import "select2";
 import "jquery-ui/ui/widgets/autocomplete";
 import "./autocomplete";
 import "./main";
-import "./homepage";
 import "./single-ad";
 import "./ads-slider";
 import "./modify-ad";
