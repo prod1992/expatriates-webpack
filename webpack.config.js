@@ -26,8 +26,6 @@ const ImageMinPlugin = require("imagemin-webpack-plugin").default;
 const PurifyCSSPlugin = require("purifycss-webpack");
 const glob = require("glob-all");
 
-
-
 const webpack = require("webpack");
 
 let targetServerConfiguration = serverConfiguration.internal;
@@ -259,10 +257,7 @@ const config = function(env, args) {
         filename: "css/[name].css"
       }),
       new PurifyCSSPlugin({
-        paths: glob.sync([
-          path.join(__dirname, 'src/pages/home-page.html'),
-          path.join(__dirname, 'src/**/*.js')
-        ]),
+        paths: glob.sync([path.join(__dirname, "src/pages/home-page.html")]),
         minimize: true,
         purifyOptions: {
           whitelist: []
