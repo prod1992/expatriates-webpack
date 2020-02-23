@@ -3,7 +3,7 @@
 
 @import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
 @import "../../node_modules/select2/src/scss/core";
-@import "../../node_modules/owl.carousel/src/scss/core";
+
 
 @import "./mixins";
 @import "./utilities";
@@ -13,7 +13,6 @@
 
 @import "./select2";
 @import "./buttons";
-@import "./modals";
 
 @import "./typo";
 @import "./header";
@@ -21,19 +20,3 @@
 @import "./breadcrumb";
 @import "./layout";
 @import "./home";
-@import "./region";
-@import "./search-feature";
-@import "./search-page";
-@import "./autocomplete";
-@import "./app-download";
-@import "./my-profile";
-
-@import "./place-an-ad";
-@import "./ad-actions";
-@import "./ads-feed";
-@import "./single-ad";
-@import "./ads-slider";
-
-@import "./footer";
-
-@import "./responsive";
