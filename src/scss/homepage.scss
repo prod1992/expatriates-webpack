@@ -4,7 +4,6 @@
 @import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
 @import "../../node_modules/select2/src/scss/core";
 
-
 @import "./mixins";
 @import "./utilities";
 @import "./fonts";
@@ -13,14 +12,15 @@
 
 @import "./select2";
 @import "./buttons";
-
 @import "./typo";
-@import "./header";
 @import "./general";
+@import "./header";
+
 @import "./breadcrumb";
 @import "./layout";
 @import "./home";
 @import "./search-feature";
 @import "./app-download";
+@import "./footer";
 
 @import "./responsive";
