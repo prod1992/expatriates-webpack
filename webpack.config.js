@@ -22,12 +22,11 @@ const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 const TerserPlugin = require("terser-webpack-plugin");
 const CopyWebpackPlugin = require("copy-webpack-plugin");
 const ImageMinPlugin = require("imagemin-webpack-plugin").default;
-const PurgecssPlugin = require("purgecss-webpack-plugin");
-
-const glob = require("glob");
+// const PurgecssPlugin = require("purgecss-webpack-plugin");
+// const glob = require("glob");
 const PATHS = {
-  src: path.join(__dirname, 'src')
-}
+  src: path.join(__dirname, "src")
+};
 const webpack = require("webpack");
 
 let targetServerConfiguration = serverConfiguration.internal;
@@ -39,7 +38,8 @@ const config = function(env, args) {
 
   return {
     entry: {
-      app: "./src/js/app.js"
+      app: "./src/js/app.js",
+      homepage: "./src/homepage/js"
     },
     output: {
       filename: "js/[name].js",
@@ -263,9 +263,6 @@ const config = function(env, args) {
       new MiniCssExtractPlugin({
         filename: "css/[name].css"
       }),
-      new PurgecssPlugin({
-        paths: glob.sync(`${PATHS.src}/pages/home-page.html`,  { nodir: true }),
-      }),
       new ImageMinPlugin({ test: /\.(jpg|jpeg|png|gif|svg)$/i }),
       new CleanWebpackPlugin({
         /**
@@ -292,10 +289,7 @@ const config = function(env, args) {
         }
       ])
     ],
-    devtool: "source-map",
-    devServer: {
-      hot: true
-    }
+    devtool: "cheap-eval-source-map"
   };
 };
 
