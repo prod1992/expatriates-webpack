@@ -23,7 +23,7 @@ const CopyWebpackPlugin = require("copy-webpack-plugin");
 const ImageMinPlugin = require("imagemin-webpack-plugin").default;
 
 const PurgecssPlugin = require("purgecss-webpack-plugin");
-const glob = require("glob");
+const glob = require("glob-all");
 const webpack = require("webpack");
 
 const PATHS = {
@@ -262,9 +262,10 @@ const config = function(env, args) {
         filename: "css/[name].css"
       }),
       new PurgecssPlugin({
-        paths: glob.sync(`${PATHS.src}/**/*`, { nodir: true }),
-        only: ["homepage"],
-        whitelistPatterns: [/exp-icon-.*/]
+        paths: glob.sync([`${PATHS.src}/**/*.html`, `${PATHS.src}/**/*.js`], {
+          nodir: true
+        }),
+        only: ["homepage"]
       }),
       new ImageMinPlugin({ test: /\.(jpg|jpeg|png|gif|svg)$/i }),
       new CleanWebpackPlugin({
