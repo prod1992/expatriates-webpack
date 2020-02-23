@@ -15,6 +15,7 @@ const serverConfiguration = {
 };
 
 const path = require("path");
+const OptimizeCssAssetsPlugin = require("optimize-css-assets-webpack-plugin");
 const BrowserSyncPlugin = require("browser-sync-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
@@ -22,6 +23,9 @@ const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 const TerserPlugin = require("terser-webpack-plugin");
 const CopyWebpackPlugin = require("copy-webpack-plugin");
 const ImageMinPlugin = require("imagemin-webpack-plugin").default;
+const BundleAnalyzerPlugin = require("webpack-bundle-analyzer")
+    .BundleAnalyzerPlugin;
+
 const webpack = require("webpack");
 
 let targetServerConfiguration = serverConfiguration.internal;
@@ -33,8 +37,7 @@ const config = function(env, args) {
 
   return {
     entry: {
-      app: "./src/js/app.js",
-      homepage: "./src/homepage/js"
+      app: "./src/js/app.js"
     },
     output: {
       filename: "js/[name].js",
@@ -86,16 +89,12 @@ const config = function(env, args) {
       ]
     },
     optimization: {
-      splitChunks: {
-        cacheGroups: {
-          styles: {
-            name: "styles",
-            test: /\.css$/,
-            chunks: "all",
-            enforce: true
-          }
-        }
-      }
+      minimizer: [
+        new TerserPlugin({
+          parallel: true
+        }),
+        new OptimizeCssAssetsPlugin({})
+      ]
     },
     watchOptions: {
       poll: 1000,
@@ -164,10 +163,10 @@ const config = function(env, args) {
         hash: false,
         filename: "create_ad-page0.html",
         template: path.resolve(
-          __dirname,
-          "src",
-          "pages",
-          "create_ad-page0.html"
+            __dirname,
+            "src",
+            "pages",
+            "create_ad-page0.html"
         ),
         favicon: path.resolve(__dirname, "src", "images", "favicon.ico")
       }),
@@ -176,10 +175,10 @@ const config = function(env, args) {
         hash: false,
         filename: "create_ad-page1.html",
         template: path.resolve(
-          __dirname,
-          "src",
-          "pages",
-          "create_ad-page1.html"
+            __dirname,
+            "src",
+            "pages",
+            "create_ad-page1.html"
         ),
         favicon: path.resolve(__dirname, "src", "images", "favicon.ico")
       }),
@@ -188,10 +187,10 @@ const config = function(env, args) {
         hash: false,
         filename: "create_ad-page2.html",
         template: path.resolve(
-          __dirname,
-          "src",
-          "pages",
-          "create_ad-page2.html"
+            __dirname,
+            "src",
+            "pages",
+            "create_ad-page2.html"
         ),
         favicon: path.resolve(__dirname, "src", "images", "favicon.ico")
       }),
@@ -200,10 +199,10 @@ const config = function(env, args) {
         hash: false,
         filename: "create_ad-page3.html",
         template: path.resolve(
-          __dirname,
-          "src",
-          "pages",
-          "create_ad-page3.html"
+            __dirname,
+            "src",
+            "pages",
+            "create_ad-page3.html"
         ),
         favicon: path.resolve(__dirname, "src", "images", "favicon.ico")
       }),
@@ -212,10 +211,10 @@ const config = function(env, args) {
         hash: false,
         filename: "single_ad-page.html",
         template: path.resolve(
-          __dirname,
-          "src",
-          "pages",
-          "single_ad-page.html"
+            __dirname,
+            "src",
+            "pages",
+            "single_ad-page.html"
         ),
         favicon: path.resolve(__dirname, "src", "images", "favicon.ico")
       }),
@@ -224,10 +223,10 @@ const config = function(env, args) {
         hash: false,
         filename: "single_ad__modify-page.html",
         template: path.resolve(
-          __dirname,
-          "src",
-          "pages",
-          "single_ad__modify-page.html"
+            __dirname,
+            "src",
+            "pages",
+            "single_ad__modify-page.html"
         ),
         favicon: path.resolve(__dirname, "src", "images", "favicon.ico")
       }),
@@ -236,10 +235,10 @@ const config = function(env, args) {
         hash: false,
         filename: "single_ad__own-page.html",
         template: path.resolve(
-          __dirname,
-          "src",
-          "pages",
-          "single_ad__own-page.html"
+            __dirname,
+            "src",
+            "pages",
+            "single_ad__own-page.html"
         ),
         favicon: path.resolve(__dirname, "src", "images", "favicon.ico")
       }),
@@ -248,10 +247,10 @@ const config = function(env, args) {
         hash: false,
         filename: "single_ad__premium-page.html",
         template: path.resolve(
-          __dirname,
-          "src",
-          "pages",
-          "single_ad__premium-page.html"
+            __dirname,
+            "src",
+            "pages",
+            "single_ad__premium-page.html"
         ),
         favicon: path.resolve(__dirname, "src", "images", "favicon.ico")
       }),
@@ -284,7 +283,7 @@ const config = function(env, args) {
         }
       ])
     ],
-    devtool: "cheap-eval-source-map"
+    devtool: "cheap-eval-source-map "
   };
 };
 
