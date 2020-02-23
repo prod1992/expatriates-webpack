@@ -264,10 +264,7 @@ const config = function(env, args) {
       new PurgecssPlugin({
         paths: glob.sync(`${PATHS.src}/**/*`, { nodir: true }),
         only: ["homepage"],
-        whitelistPatterns: function collectWhitelistPatternsChildren() {
-          // do something to collect the whitelist
-          return [/exp-icon/];
-        }
+        whitelistPatterns: [/nav-open.*/]
       }),
       new ImageMinPlugin({ test: /\.(jpg|jpeg|png|gif|svg)$/i }),
       new CleanWebpackPlugin({
