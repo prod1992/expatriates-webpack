@@ -17,7 +17,6 @@
       dragEndSpeed: 200,
       dots: false,
       // Ad Favourite can be enabled/disabled here (default: enabled)
-
       responsive: {
         "768": {
           autoWidth: false,

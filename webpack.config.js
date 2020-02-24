@@ -21,14 +21,7 @@ const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 const TerserPlugin = require("terser-webpack-plugin");
 const CopyWebpackPlugin = require("copy-webpack-plugin");
 const ImageMinPlugin = require("imagemin-webpack-plugin").default;
-
-const PurgecssPlugin = require("purgecss-webpack-plugin");
-const glob = require("glob");
 const webpack = require("webpack");
-
-const PATHS = {
-  src: path.join(__dirname, "src")
-};
 
 let targetServerConfiguration = serverConfiguration.internal;
 
@@ -84,7 +77,7 @@ const config = function(env, args) {
               options: {
                 name: "fonts/[name].[hash:6].[ext]",
                 publicPath: "../",
-                limit: 5000
+                limit: 8192
               }
             }
           ]
@@ -125,6 +118,21 @@ const config = function(env, args) {
         jquery: "jquery",
         "window.jQuery": "jquery",
         jQuery: "jquery"
+      }),
+
+      new HtmlWebpackPlugin({
+        inject: true,
+        hash: false,
+        filename: "header.html",
+        template: path.resolve(__dirname, "src", "partials", "header.html"),
+        favicon: path.resolve(__dirname, "src", "images", "favicon.ico")
+      }),
+      new HtmlWebpackPlugin({
+        inject: true,
+        hash: false,
+        filename: "footer.html",
+        template: path.resolve(__dirname, "src", "partials", "footer.html"),
+        favicon: path.resolve(__dirname, "src", "images", "favicon.ico")
       }),
       new HtmlWebpackPlugin({
         inject: true,
@@ -271,10 +279,6 @@ const config = function(env, args) {
       }),
       new MiniCssExtractPlugin({
         filename: "css/[name].css"
-      }),
-      new PurgecssPlugin({
-        paths: glob.sync(`${PATHS.src}/**/*`, { nodir: true }),
-        only: ["homepage"]
       }),
       new ImageMinPlugin({ test: /\.(jpg|jpeg|png|gif|svg)$/i }),
       new CleanWebpackPlugin({
