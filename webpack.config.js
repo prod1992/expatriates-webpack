@@ -54,7 +54,7 @@ const config = function(env, args) {
         },
         {
           test: /\.js$/,
-          include: /src/,
+          exclude: /node_modules/,
           loader: "babel-loader"
         },
         {
@@ -305,8 +305,7 @@ const config = function(env, args) {
           toType: "dir"
         }
       ])
-    ],
-    devtool: "cheap-eval-source-map"
+    ]
   };
 };
 
