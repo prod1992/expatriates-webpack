@@ -86,6 +86,9 @@ const config = function(env, args) {
       ]
     },
     optimization: {
+      splitChunks: {
+        chunks: "all"
+      },
       minimizer: [
         new TerserPlugin({
           parallel: true
