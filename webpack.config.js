@@ -31,6 +31,10 @@ const config = function(env, args) {
   }
 
   return {
+    target: "web",
+    externals: {
+      jquery: 'jQuery'
+    },
     entry: {
       app: "./src/js/app.js",
       homepage: "./src/homepage.js"
