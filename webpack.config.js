@@ -86,8 +86,8 @@ const config = function(env, args) {
       ]
     },
     optimization: {
-      splitChunks: {
-        chunks: "all"
+      runtimeChunk: {
+        name: 'shared',
       },
       minimizer: [
         new TerserPlugin({
@@ -123,7 +123,6 @@ const config = function(env, args) {
         "window.jQuery": "jquery",
         jQuery: "jquery"
       }),
-
       new HtmlWebpackPlugin({
         inject: true,
         hash: false,
