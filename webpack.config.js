@@ -54,7 +54,7 @@ const config = function(env, args) {
         },
         {
           test: /\.js$/,
-          exclude: /(node_modules|bower_components)/,
+          include: /src/,
           loader: "babel-loader"
         },
         {
@@ -86,9 +86,6 @@ const config = function(env, args) {
       ]
     },
     optimization: {
-      runtimeChunk: {
-        name: 'shared',
-      },
       minimizer: [
         new TerserPlugin({
           parallel: true
